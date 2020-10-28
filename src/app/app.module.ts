@@ -14,6 +14,7 @@ import { TextMaskModule } from 'angular2-text-mask';
 import { ModalEnviarComponent } from './modal-enviar/modal-enviar.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { FaqComponent } from './faq/faq.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { FaqComponent } from './faq/faq.component';
     MDBBootstrapModule.forRoot(),
     TextMaskModule,
     ModalModule.forRoot(),
+    HttpClientModule,
   ],
   entryComponents: [
     ModalEnviarComponent,
