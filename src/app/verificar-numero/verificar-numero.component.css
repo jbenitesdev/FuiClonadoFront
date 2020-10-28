@@ -1,0 +1,377 @@
+.default-container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.contianer-info {
+    position: absolute;
+    z-index: 999;
+    top: 12%;
+}
+
+.div-verificar-title {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 6em;
+    font-weight: 300;
+}
+
+.div-sub-title {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.div-verificar-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.form-verificar-text-box {
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.div-faq {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-podemos-ajudar-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.span-title-ajudar {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #3C5768;
+}
+
+.container-card-ajudar, .container-card-estatisticas {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.div-card-ajudar-first {
+    display: flex;
+    flex-direction: row;
+}
+
+.div-card-ajudar-second {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.div-card-ajudar-third {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.card-ajudar {
+    height: 753px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 0px 20px #00000033;
+    color: #3C5768;
+}
+
+.card-ajudar div, .card-estatisticas div {
+    text-align: center;
+}
+
+.card-icon {
+    width: 115px;
+    height: 115px;
+    margin-top: 40px;
+}
+
+.card-span-title {
+    margin-top: 5px;
+    color: #3C5768; 
+    font-weight: bold; 
+    font-size: 3rem;
+}
+
+.div-card-ajudar-third .card-ajudar .card-span-title {
+    line-height: 50px;
+}
+
+.card-span-text {
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.btn-card {
+    width: 175px;
+    height: 60px;
+    margin-top: 25px;
+    background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+}
+
+.span-acessar {
+    font-size: 2em;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.div-estatisticas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.div-card-estatisticas-first {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.div-card-estatisticas-second {
+    display: flex;
+    flex-direction: row;
+    margin-top: 170px;
+}
+
+.div-card-estatisticas-third {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.div-card-estatisticas-fourth {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+}
+
+.span-title-estatisticas {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #3C5768;
+}
+
+.card-estatisticas {
+    height: 205px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 0px 20px #00000033;
+    color: #3C5768;
+}
+
+.card-estatisticas-span-title {
+    margin-top: 5px;
+    color: #3C5768; 
+    font-weight: bold; 
+    font-size: 4rem;
+}
+
+.card-estatisticas-span-text {
+    margin-top: 10px;
+    font-size: 2em;
+    margin-top: -10px;
+}
+
+.card-estatisticas-span-text-fourth {
+    margin-top: 10px;
+    font-size: 1.8em;
+    margin-top: -10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.div-faq-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.div-card-faq {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.span-title-faq {
+    font-size: 5rem;
+    font-weight: 400;
+    color: #3C5768;
+}
+
+.card-faq {
+    height: 420px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 0px 20px #00000033;
+    color: #3C5768;
+}
+
+.card-faq div {
+    text-align: left;
+}
+
+.card-faq-span-title {
+    text-align: left;
+    color: #3C5768;
+    font-size: 2em;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.div-span-faq {
+    margin-top: 20px;
+}
+
+.container-card-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.div-container-links {
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+    background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+    border-radius: 64px;
+    opacity: 1;
+}
+
+.link-icon {
+    height: 60px;
+    cursor: pointer;
+}
+
+.container-contato {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.div-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.span-contato {
+    font-size: 4em;
+    font-weight: 400;
+    color: #3C5768;
+}
+
+.span-contato-text {
+    font-size: 2em;
+    font-weight: 300;
+    color: #3C5768;
+}
+
+.div-contato-text-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.div-contato-text {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.div-contato-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.span-email-text {
+    font-size: 1.5em;
+    color: #3C5768;
+}
+
+.span-inscreva {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.btn-inscreva {
+    width: 240px;
+    height: 60px;
+    background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+    
+}
+
+.div-rodape {
+    margin-top: 100px;
+    background: #3C5768 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.div-logo-branco {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo-branco {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.div-faq-text {
+    font-size: 2em!important;
+    color: #3C5768!important;
+}
+
+.field-error {
+    color: red;
+    font-weight: 300;
+    margin-left: 5px;
+    position: absolute;
+}
+
+.div-btn-verificar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-verificar {
+    width: 175px;
+    /* height: 60px; */
+    margin-top: 10px;
+    /* background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box; */
+    /* mix-blend-mode: multiply;
+    border-radius: 20px; */
+}

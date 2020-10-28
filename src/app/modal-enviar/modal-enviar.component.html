@@ -1,0 +1,14 @@
+<div class="modal-header div-header-modal">
+    <!-- <div class="div-success-circle"></div> -->
+    <img class="modal-icon" src="./assets/img/icon/SuccessIcon.png">
+</div>
+<div class="modal-body div-body-modal">
+    <span>Número registrado com sucesso!</span>
+</div>
+<div class="modal-footer div-footer-modal">
+    <button type="button" class="btn btn-default btn-compartilhar-modal" (click)="openShareDialog()">
+        <img class="compartilhar-icon" src="./assets/img/icon/FacebookIcon.png">
+        <span class="span-compartilhar ">COMPARTILHAR</span>
+    </button>
+    <button type="button" class="btn btn-danger" (click)="bsModalRef.hide()">FECHAR</button>
+</div>

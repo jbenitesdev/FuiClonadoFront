@@ -1,0 +1,290 @@
+<div class="default-container col-12">
+    <div>
+        <div class="col-12 div-formulario">
+            <div class="col-6 div-formulario-esquerdo">
+                <div class="div-title-a">
+                    <div class="col-1"></div>
+                    <span class="col-11 span-title-esquerdo">VOCÊ FOI</span>
+                </div>
+                <div class="div-title-b">
+                    <div class="col-1"></div>
+                    <span class="col-11 span-title-esquerdo">CLONADO?</span>
+                </div>
+                <div class="div-title-c">
+                    <div class="col-1"></div>
+                    <div class="col-12 div-group-arrow-components">
+                        <div class="col-8 container-preencha-formulario">
+                            <div class="col-12 div-preencha-formulario"></div>
+                            <span class="span-preencha-formulario">PREENCHA O FORMULÁRIO AO LADO</span>
+                        </div>
+                        <div class="div-circle-arrow-icon">
+                            <div class="circle-arrow-icon"></div>
+                            <img class="arrow-icon-img" src="./assets/img/icon/RightArrow.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 div-formulario-direito">
+                <div class="col-2"></div>
+                <div class="col-10">
+                    <div class="triangle-bottomright"></div>
+                    <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="div-form">
+                        <span class="form-span-title">INFORME QUE</span>
+                        <span class="form-span-title">FOI CLONADO</span>
+                        <div class="form-group default-component">
+                            <label for="nome" class="control-label" [class.label-error]="!nome.valid && nome.touched">Nome</label>
+                            <input type="text" ngModel name="nome" required #nome="ngModel" class="form-control form-text-box" id="nome" placeholder="Insira seu nome">
+                            <div class="field-error" *ngIf="!nome.valid && nome.touched">O campo Nome é obrigatório</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cpf" class="control-label" [class.label-error]="!cpf.valid && cpf.touched && !validarCpf(cpf.value)">CPF</label>
+                            <input type="text" ngModel name="cpf" required #cpf="ngModel" [textMask]="{mask: cpfMask}" class="form-control form-text-box" id="cpf" placeholder="Insira seu cpf">
+                            <div class="field-error" *ngIf="!cpf.valid && cpf.touched">O campo CPF é obrigatório</div>
+                            <div class="field-error" *ngIf="cpf.valid && cpf.touched && !validarCpf(cpf.value)">CPF inválido</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="numero" class="control-label" [class.label-error]="!numero.valid && numero.touched">Numero</label>
+                            <input type="text" ngModel name="numero" #numero="ngModel" required [textMask]="{mask: telMask}" class="form-control form-text-box" id="numero" placeholder="Insira seu número com DDD">
+                            <div class="field-error" *ngIf="!numero.valid && numero.touched">O campo Número é obrigatório</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" ngModel email name="email" class="form-control form-text-box" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group div-aceitar-termos">
+                            <input type="checkbox" ngModel name="optradio" required class="rb-aceitar-termos">
+                            <label class="lbl-aceitar-termos">Aceito os termos</label>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-default btn-enviar">
+                                <span class="span-enviar">ENVIAR</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 div-podemos-ajudar">
+        <div class="col-12 div-podemos-ajudar-title">
+            <span class="col-12 span-title-ajudar">NO QUE PODEMOS</span>
+            <span class="col-12 span-title-ajudar">TE AJUDAR?</span>
+        </div>
+        <div class="col-12 container-card-ajudar">
+            <div class="col-4 div-card-ajudar-first">
+                <div class="col-1"></div>
+                <div class="col-10 card-ajudar">
+                    <div class="col-12">
+                        <img class="card-icon" src="./assets/img/icon/MaskIcon.png">
+                    </div>
+                    <div class="col-12 card-span-title">
+                        <span>Fui Clonado</span>
+                    </div>
+                    <div class="col-12 card-span-text">
+                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-default btn-card">
+                            <span class="span-acessar">ACESSAR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="col-4 div-card-ajudar-second">
+                <div class="col-1"></div>
+                <div class="col-10 card-ajudar">
+                    <div class="col-12">
+                        <img class="card-icon" src="./assets/img/icon/OkIcon.png">
+                    </div>
+                    <div class="col-12 card-span-title">
+                        <span>Verificar</span>
+                    </div>
+                    <div class="col-12 card-span-text">
+                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-default btn-card">
+                            <span class="span-acessar">ACESSAR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="col-4 div-card-ajudar-third">
+                <div class="col-1"></div>
+                <div class="col-10 card-ajudar">
+                    <div class="col-12">
+                        <img class="card-icon" src="./assets/img/icon/SecurityIcon.png">
+                    </div>
+                    <div class="col-12 card-span-title">
+                        <span>Como não ser clonado</span>
+                    </div>
+                    <div class="col-12 card-span-text">
+                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-default btn-card">
+                            <span class="span-acessar">ACESSAR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 div-estatisticas">
+        <div class="col-12 div-podemos-ajudar-title">
+            <span class="col-12 span-title-estatisticas">VEJA AS ESTATÍSTICAS</span>
+            <span class="col-12 span-title-estatisticas">DO FUI CLONADO</span>
+        </div>
+        <div class="col-12 container-card-estatisticas">
+            <div class="col-3 div-card-estatisticas-first">
+                <div class="col-1"></div>
+                <div class="col-10 card-estatisticas">
+                    <div class="col-12 card-estatisticas-span-title">
+                        <span>+50</span>
+                    </div>
+                    <div class="col-12 card-estatisticas-span-text">
+                        <span>Números Verificados</span>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="col-3 div-card-estatisticas-second">
+                <div class="col-1"></div>
+                <div class="col-10 card-estatisticas">
+                    <div class="col-12 card-estatisticas-span-title">
+                        <span>+355</span>
+                    </div>
+                    <div class="col-12 card-estatisticas-span-text">
+                        <span>Usuários recuperados</span>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="col-3 div-card-estatisticas-third">
+                <div class="col-1"></div>
+                <div class="col-10 card-estatisticas">
+                    <div class="col-12 card-estatisticas-span-title">
+                        <span>+600</span>
+                    </div>
+                    <div class="col-12 card-estatisticas-span-text">
+                        <span>Maior índice de clones</span>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="col-3 div-card-estatisticas-fourth">
+                <div class="col-1"></div>
+                <div class="col-10 card-estatisticas card-estatisticas-fourth">
+                    <div class="col-12 card-estatisticas-span-title">
+                        <span>+64</span>
+                    </div>
+                    <div class="col-12 card-estatisticas-span-text-fourth">
+                        <span>Número de telefones clonados</span>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 div-faq">
+        <div class="col-12 div-faq-title">
+            <span class="col-12 span-title-faq">FAQ</span>
+        </div>
+        <div class="col-12 container-card-estatisticas">
+            <div class="col-6 div-card-faq">
+                <div class="col-10 card-faq">
+                    <div class="col-12 card-faq-span-title">
+                        <span>Perguntas Populares</span>
+                    </div>
+                    <div class="col-12">
+                        <div class="div-span-faq">
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
+                        </div>
+                        <div class="div-span-faq">
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
+                        </div>
+                        <div class="div-span-faq">
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
+                        </div>
+                        <div class="div-span-faq">
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
+                        </div>
+                        <div class="div-span-faq">
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 div-card-faq">
+                <div class="col-10 card-faq">
+                    <div class="col-12 card-faq-span-title">
+                        <span>Perguntas Frequentes</span>
+                    </div>
+                    <div class="col-12">
+                        <div class="div-span-faq">
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
+                        </div>
+                        <div class="div-span-faq">
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
+                        </div>
+                        <div class="div-span-faq">
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
+                        </div>
+                        <div class="div-span-faq">
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
+                        </div>
+                        <div class="div-span-faq">
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 container-card-links">
+            <div class="col-12 div-container-links">
+                <div class="col-10 div-links">
+                    <img class="link-icon" src="./assets/img/icon/FacebookIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/InstagramIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/TelIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/BeIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/MailIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/WhatsAppIcon.png">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 container-contato">
+            <div class="col-12 div-contato">
+                <div class="col-12 div-contato-text">
+                    <div class="col-12 div-contato-text-container">
+                        <div class="col-12">
+                            <span class="span-contato">ENTRE EM CONTATO</span>
+                        </div>
+                    </div>
+                    <div class="col-12 div-contato-text-container">
+                        <div class="col-2"></div>
+                        <div class="col-8 div-faq-text">
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+                <div class="col-12 div-contato-action">
+                    <div class="col-6 span-email-text">O E-mail</div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-default btn-card btn-inscreva">
+                            <span class="span-inscreva">SE INSCREVA</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 div-rodape">
+        <div class="col-12 div-logo-branco">
+            <img class="logo-branco" src="./assets/img/logo/LogoFuiClonadoBranco.png">
+        </div>
+    </div>
+</div>
