@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
+import { StoreService } from '../shared/store.service';
 
 @Component({
   selector: 'app-modal-enviar',
@@ -7,7 +8,7 @@ import { BsModalRef } from 'ngx-bootstrap/modal';
   styleUrls: ['./modal-enviar.component.css']
 })
 export class ModalEnviarComponent implements OnInit {
-  constructor(public bsModalRef: BsModalRef) { }
+  constructor(public bsModalRef: BsModalRef, readonly storeService: StoreService) {  }
   url = 'https://www.facebook.com/dialog/share?href=https%3A%2F%2Fg1.globo.com%2Fpolitica%2Feleicoes%2F2020%2Fnoticia%2F2020%2F10%2F27%2Feleicoes-2020-tse-aprova-envio-de-tropas-federais-a-345-localidades-em-sete-estados.ghtml&app_id=273928910598923';
 
   ngOnInit() {

@@ -37,7 +37,7 @@
                             <div class="field-error" *ngIf="!nome.valid && nome.touched">O campo Nome é obrigatório</div>
                         </div>
                         <div class="form-group">
-                            <label for="cpf" class="control-label" [class.label-error]="!cpf.valid && cpf.touched && !validarCpf(cpf.value)">CPF</label>
+                            <label for="cpf" class="control-label" [class.label-error]="!cpf.valid && cpf.touched && !validarCpf(cpf.value) || cpf.valid && cpf.touched && !validarCpf(cpf.value)">CPF</label>
                             <input type="text" ngModel name="cpf" required #cpf="ngModel" [textMask]="{mask: cpfMask}" class="form-control form-text-box" id="cpf" placeholder="Insira seu cpf">
                             <div class="field-error" *ngIf="!cpf.valid && cpf.touched">O campo CPF é obrigatório</div>
                             <div class="field-error" *ngIf="cpf.valid && cpf.touched && !validarCpf(cpf.value)">CPF inválido</div>
@@ -52,7 +52,7 @@
                             <input type="email" ngModel email name="email" class="form-control form-text-box" id="email" placeholder="Enter email">
                         </div>
                         <div class="form-group div-aceitar-termos">
-                            <input type="checkbox" ngModel name="optradio" required class="rb-aceitar-termos">
+                            <input type="checkbox" ngModel name="termo" required class="rb-aceitar-termos">
                             <label class="lbl-aceitar-termos">Aceito os termos</label>
                         </div>
                         <div>

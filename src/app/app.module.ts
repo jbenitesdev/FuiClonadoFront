@@ -15,6 +15,9 @@ import { ModalEnviarComponent } from './modal-enviar/modal-enviar.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { FaqComponent } from './faq/faq.component';
 import { HttpClientModule } from '@angular/common/http';
+import { StoreService } from './shared/store.service';
+import { ModalBuscarNumeroComponent } from './modal-buscar-numero/modal-buscar-numero.component';
+import { ModalMessageComponent } from './modal-message/modal-message.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { HttpClientModule } from '@angular/common/http';
     NavBarComponent,
     HomeComponent,
     VerificarNumeroComponent,
+    ModalMessageComponent,
     ModalEnviarComponent,
+    ModalBuscarNumeroComponent,
     FaqComponent,
   ],
   imports: [
@@ -37,9 +42,11 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
   ],
   entryComponents: [
+    ModalMessageComponent,
     ModalEnviarComponent,
+    ModalBuscarNumeroComponent,
   ],
-  providers: [],
+  providers: [StoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

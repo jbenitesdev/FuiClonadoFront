@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VerificarNumeroComponent } from './verificar-numero.component';
+import { ModalMessageComponent } from './modal-message.component';
 
-describe('VerificarNumeroComponent', () => {
-    let component: VerificarNumeroComponent;
-    let fixture: ComponentFixture<VerificarNumeroComponent>;
+describe('ModalMessageComponent', () => {
+    let component: ModalMessageComponent;
+    let fixture: ComponentFixture<ModalMessageComponent>;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [VerificarNumeroComponent]
+            declarations: [ModalMessageComponent]
         })
             .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(VerificarNumeroComponent);
+        fixture = TestBed.createComponent(ModalMessageComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });
