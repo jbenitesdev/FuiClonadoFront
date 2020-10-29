@@ -22,7 +22,7 @@ export class NumerosClonadosService {
     if (url.indexOf('localhost') > -1) {
       return this.http.get<Observable<any>>(`http://localhost:8564/numeroClonado/${numero}`);
     } else {
-      return this.http.get<Observable<any>>(`http://fuiclonadoapi.herokuapp.com/numeroClonado/${numero}`);
+      return this.http.get<Observable<any>>(`https://fuiclonadoapi.herokuapp.com/numeroClonado/${numero}`);
     }
   }
 }
