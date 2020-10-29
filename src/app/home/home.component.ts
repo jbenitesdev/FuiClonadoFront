@@ -27,22 +27,21 @@ export class HomeComponent implements OnInit {
   }
 
   onSubmit(form) {
-    this.openModalEnviar(false);
-    // if (form.status !== 'INVALID' && validate(form.controls.cpf.value)) {
-    //  this.numerosClonadosService.salvarRegistro(
-    //    form.controls.nome.value,
-    //    form.controls.cpf.value,
-    //    form.controls.numero.value,
-    //    form.controls.email.value,
-    //    form.controls.termo.value,
-    //    window.location.href).subscribe(res => {
-    //     if (res.status === 200) {
-    //       this.openModalEnviar(false);
-    //     } else {
-    //       this.openModalEnviar(true);
-    //     }
-    //  });
-    // }
+    if (form.status !== 'INVALID' && validate(form.controls.cpf.value)) {
+      this.numerosClonadosService.salvarRegistro(
+        form.controls.nome.value,
+        form.controls.cpf.value,
+        form.controls.numero.value,
+        form.controls.email.value,
+        form.controls.termo.value,
+        window.location.href).subscribe(res => {
+          if (res.status === 200) {
+            this.openModalEnviar(false);
+          } else {
+            this.openModalEnviar(true);
+          }
+      });
+    }
   }
 
   openModalEnviar(hasError: boolean) {
