@@ -26,7 +26,7 @@ export class VerificarNumeroComponent implements OnInit {
     onSubmit(form) {
         if (form.controls.numero.value) {
             this.numerosClonadosService.buscarNumero(form.controls.numero.value, window.location.href).subscribe(res => {
-               if (res.status === 200) {
+               if (res && res.status === 200) {
                  this.openModalBuscarNumero(form.controls.numero.value, false);
                } else {
                  this.openModalBuscarNumero(form.controls.numero.value, true);

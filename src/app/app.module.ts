@@ -19,6 +19,8 @@ import { StoreService } from './shared/store.service';
 import { ModalBuscarNumeroComponent } from './modal-buscar-numero/modal-buscar-numero.component';
 import { ModalMessageComponent } from './modal-message/modal-message.component';
 import { ContatoComponent } from './contato/contato.component';
+import { AccordionModule } from 'ngx-accordion';
+import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { ContatoComponent } from './contato/contato.component';
     TextMaskModule,
     ModalModule.forRoot(),
     HttpClientModule,
+    AccordionModule,
+    NgbAccordionModule
   ],
   entryComponents: [
     ModalMessageComponent,
