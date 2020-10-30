@@ -21,6 +21,7 @@ import { ModalMessageComponent } from './modal-message/modal-message.component';
 import { ContatoComponent } from './contato/contato.component';
 import { AccordionModule } from 'ngx-accordion';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
+import { ContatoWppComponent } from './contatoWpp/contatoWpp.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
     ModalBuscarNumeroComponent,
     FaqComponent,
     ContatoComponent,
+    ContatoWppComponent,
   ],
   imports: [
     FormsModule,
