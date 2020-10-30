@@ -12,9 +12,9 @@ export class NumerosClonadosService {
 
   public salvarRegistro(nome: string, cpf: string, numero: string, email: string, termo: string, url: string): Observable<any> {
     if (url.indexOf('localhost') > -1) {
-      return this.http.post<Observable<any>>('http://localhost:8564/numeroClonado', { nome,  cpf, numero,  email, termo});
+      return this.http.post<Observable<any>>('http://localhost:8564/numeroClonado', { nome,  cpf, numero,  email, termo });
     } else {
-      return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/numeroClonado', { nome, cpf, numero, email, termo});
+      return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/numeroClonado', { nome, cpf, numero, email, termo });
     }
   }
 
@@ -23,6 +23,14 @@ export class NumerosClonadosService {
       return this.http.get<Observable<any>>(`http://localhost:8564/numeroClonado/${numero}`);
     } else {
       return this.http.get<Observable<any>>(`https://fuiclonadoapi.herokuapp.com/numeroClonado/${numero}`);
+    }
+  }
+
+  public enviarEmail(from: string, subject: string, msg: string, url: string): Observable<any> {
+    if (url.indexOf('localhost') > -1) {
+      return this.http.post<Observable<any>>('http://localhost:8564/sendMail', { from,  subject, msg });
+    } else {
+      return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/sendMail', { from,  subject, msg });
     }
   }
 }

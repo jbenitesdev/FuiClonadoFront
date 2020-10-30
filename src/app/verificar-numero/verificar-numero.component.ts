@@ -46,7 +46,6 @@ export class VerificarNumeroComponent implements OnInit {
 
     openModalMessage(hasError: boolean) {
         this.storeService.modalBuscarNumeroError = hasError;
-
         this.modalRef = this.modalService.show(ModalMessageComponent, this.modalConfig);
     }
 }

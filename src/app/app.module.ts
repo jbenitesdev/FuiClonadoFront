@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { StoreService } from './shared/store.service';
 import { ModalBuscarNumeroComponent } from './modal-buscar-numero/modal-buscar-numero.component';
 import { ModalMessageComponent } from './modal-message/modal-message.component';
+import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ModalMessageComponent } from './modal-message/modal-message.component';
     ModalEnviarComponent,
     ModalBuscarNumeroComponent,
     FaqComponent,
+    ContatoComponent,
   ],
   imports: [
     FormsModule,

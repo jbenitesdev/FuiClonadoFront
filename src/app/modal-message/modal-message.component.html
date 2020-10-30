@@ -4,6 +4,7 @@
 </div>
 <div class="modal-body div-body-modal">
     <span *ngIf="storeService.modalBuscarNumeroError">Número inválido!</span>
+    <span *ngIf="storeService.modalBuscarMsg">{{storeService.modalBuscarMsg}}</span>
 </div>
 <div class="modal-footer div-footer-modal">
     <button type="button" class="btn btn-danger" (click)="bsModalRef.hide()">FECHAR</button>
