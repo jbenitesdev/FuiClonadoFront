@@ -20,14 +20,32 @@ export class ContatoWppComponent implements OnInit {
     
     openGoogleApi() {
         let clientId = "464781618950-f2b0bp5aubjdicbfj10kv7lqejv888vs.apps.googleusercontent.com";
-        // let redirectUrl = "https://www.demo.yogihosting.com/aspnet/google-contacts-api/index.aspx";
-        let redirectUrl = "https://fuiclonadoarq.herokuapp.com/contatosApi"
+        let redirectUrl = "https://fuiclonadoarq.herokuapp.com/contatosApi";
 
         window.location.href = "https://accounts.google.com/o/oauth2/auth?redirect_uri="+redirectUrl+"&response_type=code&client_id=" + clientId + "&scope=https://www.google.com/m8/feeds/&approval_prompt=force&access_type=offline";
-        //Response.Redirect("https://accounts.google.com/o/oauth2/auth?redirect_uri="+redirectUrl+"&response_type=code&client_id=" + clientId + "&scope=https://www.google.com/m8/feeds/&approval_prompt=force&access_type=offline");
-        
+    }
+
+    getAccessToken()
+    {
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+
+        if (code && code !== '' && code !== undefined) {
+            console.log("EXECUTANDO REQUEST DO TOKEN")
+            let googleClientId = "464781618950-f2b0bp5aubjdicbfj10kv7lqejv888vs.apps.googleusercontent.com";
+            let googleClientSceret = "Y5I1R957rkEfpdviz8UiGcBC";
+            let googleRedirectUrl = "https://fuiclonadoarq.herokuapp.com/contatosApi";
+            
+            this.numerosClonadosService.getAccessToken(code, googleClientId, googleClientSceret, googleRedirectUrl).subscribe(res => {console.log("RES: ", res)})
+        }
+    }
+
+    obterQueryString() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
     }
 
     ngOnInit() {
+        this.getAccessToken()
     }
 }

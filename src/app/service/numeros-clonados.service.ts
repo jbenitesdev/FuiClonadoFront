@@ -33,4 +33,8 @@ export class NumerosClonadosService {
       return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/sendMail', { from,  subject, msg });
     }
   }
+
+  public getAccessToken(code: string, googleClientId: string, googleClientSceret: string, googleRedirectUrl: string): Observable<any> {
+    return this.http.post<Observable<any>>('https://accounts.google.com/o/oauth2/token', {code: code, client_id: googleClientId, client_secret: googleClientSceret, redirect_uri: googleRedirectUrl, grant_type: "authorization_code"})
+  }
 }
