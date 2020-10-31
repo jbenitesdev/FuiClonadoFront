@@ -39,8 +39,10 @@ export class NumerosClonadosService {
   }
 
   public getContatos(tokenType: string, scope: string, accessToken: string, refreshToken: string): Observable<any> {
-    return this.http.get<Observable<any>>(`${scope}`,{
-      headers: { 'Authorization': `${tokenType} ${accessToken}` }
+    return this.http.get<Observable<any>>(`${scope}`, {
+      headers: {
+      Authorization: `${tokenType} ${accessToken}`,
+      responseType: 'text'},
     });
   }
 }
