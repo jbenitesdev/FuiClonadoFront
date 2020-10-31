@@ -40,10 +40,9 @@ export class NumerosClonadosService {
 
   public getContatos(tokenType: string, scope: string, accessToken: string, refreshToken: string): Observable<any> {
     console.log('Entrou no service');
-    const tokenTest = 'ya29.A0AfH6SMBf-Z1WZV-yfao7QhcR53iiVOK9Pxw0mp_CfyaHKCHhXQxsE1dUmzNkClFgkMiIh9pddzflF_CT2QyrYYjgzW3UO0HHTeWR3PQveIuygcO04tk_zQlTXQiZLchUZNRkRNmri8Hrm-ofeihWWbh1t_u5jQNo2mJY3OvLvto';
-    const tokenTypeTest = 'Bearer';
-    return this.http.get<Observable<any>>(`${scope}`, {
-      headers: { 'Authorization': `${tokenTypeTest} ${tokenTest}` }
+
+    return this.http.get(`${scope}`, {
+      headers: { 'Authorization': `${tokenType} ${accessToken}` }
     });
   }
 }
