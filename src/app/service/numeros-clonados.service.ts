@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -39,10 +39,15 @@ export class NumerosClonadosService {
   }
 
   public getContatos(tokenType: string, scope: string, accessToken: string, refreshToken: string): Observable<any> {
-    return this.http.get<Observable<any>>(`${scope}`, {
-      headers: {
-      Authorization: `${tokenType} ${accessToken}`,
-      responseType: 'text'},
-    });
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    headers.append('Access-Control-Allow-Origin', '*' );
+    headers.append('Authorization', `${tokenType} ${accessToken}`)
+
+    return this.http.get<Observable<any>>(`${scope}`, { headers });
   }
 }
+
+// return this.http.get<Observable<any>>(`${scope}`, {
+//   headers: { 'Authorization': `${tokenType} ${accessToken}`,
+//   'responseType': 'text'},
+// });
