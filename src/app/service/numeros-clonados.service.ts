@@ -38,19 +38,11 @@ export class NumerosClonadosService {
     return this.http.post<Observable<any>>('https://accounts.google.com/o/oauth2/token', {code: code, client_id: googleClientId, client_secret: googleClientSceret, redirect_uri: googleRedirectUrl, grant_type: "authorization_code"})
   }
 
-  public getContatos(tokenType: string, scope: string, accessToken: string, refreshToken: string): Observable<any> {
-    console.log('Entrou no service');
-
-    return this.http.get(`${scope}`, {
-      headers: { 'Authorization': `${tokenType} ${accessToken}` }
-    });
-  }
-
-  public getContatosApi(url: string, tokenType: string, accessToken: string): Observable<any> {
-    // if (url.indexOf('localhost') > -1) {
+  public getContatosGoogle(url: string, tokenType: string, accessToken: string): Observable<any> {
+    if (url.indexOf('localhost') > -1) {
       return this.http.post<Observable<any>>('http://localhost:8564/obterContatos', { url, tokenType, accessToken });
-    // } else {
-    //   return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/obterContatos', { url, tokenType, accessToken });
-    // }
+    } else {
+      return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/obterContatos', { url, tokenType, accessToken });
+    }
   }
 }

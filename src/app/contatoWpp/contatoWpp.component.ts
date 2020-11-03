@@ -56,8 +56,13 @@ export class ContatoWppComponent implements OnInit {
         //     console.log('RESPONSE DOS CONTATOS: ', respCon);
         // });
 
-        this.numerosClonadosService.getContatosApi(scope, bearer, accessToken).subscribe(respCon => {
-            console.log('RESPONSE DOS CONTATOS: ', respCon);
+        this.numerosClonadosService.getContatosGoogle(scope, bearer, accessToken).subscribe(respCon => {
+            console.log('RESPONSE DOS CONTATOS: ', respCon.data);
+
+            // respCon.map(entry => {
+            //     console.log("VALOR DE UMA PROP: ", entry['prop'])
+            // })
+            
         });
     }
 
