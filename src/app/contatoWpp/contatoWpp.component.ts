@@ -52,7 +52,11 @@ export class ContatoWppComponent implements OnInit {
         const accessToken = accessTokenResp;
         const scope = 'https://www.google.com/m8/feeds/contacts/default/full/';
 
-        this.numerosClonadosService.getContatos(bearer, scope, accessToken, refreshToken).subscribe(respCon => {
+        // this.numerosClonadosService.getContatos(bearer, scope, accessToken, refreshToken).subscribe(respCon => {
+        //     console.log('RESPONSE DOS CONTATOS: ', respCon);
+        // });
+
+        this.numerosClonadosService.getContatosApi(scope, bearer, accessToken).subscribe(respCon => {
             console.log('RESPONSE DOS CONTATOS: ', respCon);
         });
     }

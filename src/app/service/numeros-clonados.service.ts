@@ -45,4 +45,12 @@ export class NumerosClonadosService {
       headers: { 'Authorization': `${tokenType} ${accessToken}` }
     });
   }
+
+  public getContatosApi(url: string, tokenType: string, accessToken: string): Observable<any> {
+    // if (url.indexOf('localhost') > -1) {
+      return this.http.post<Observable<any>>('http://localhost:8564/obterContatos', { url, tokenType, accessToken });
+    // } else {
+    //   return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/obterContatos', { url, tokenType, accessToken });
+    // }
+  }
 }
