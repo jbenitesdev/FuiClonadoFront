@@ -20,6 +20,10 @@ export class ContatoWppComponent implements OnInit {
                 private numerosClonadosService: NumerosClonadosService,
                 private storeService: StoreService) { }
 
+    ngOnInit() {
+        this.getAccessToken();
+    }
+
     openGoogleApi() {
         const clientId = '464781618950-f2b0bp5aubjdicbfj10kv7lqejv888vs.apps.googleusercontent.com';
         const redirectUrl = 'https://fuiclonadoarq.herokuapp.com/contatosApi';
@@ -71,7 +75,7 @@ export class ContatoWppComponent implements OnInit {
         });
     }
 
-    ngOnInit() {
-        this.getAccessToken();
+    onSubmit(form) {
+        console.log('Enviou o e-mail');
     }
 }

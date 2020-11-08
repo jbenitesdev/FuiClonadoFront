@@ -8,7 +8,7 @@ import { StoreService } from '../shared/store.service';
   styleUrls: ['./notificar-contatos.component.css']
 })
 export class NotificarContatosComponent implements OnInit {
-  constructor(private storeService: StoreService) {  }
+  constructor(public storeService: StoreService) {  }
 
   ngOnInit() {
 
@@ -36,5 +36,9 @@ export class NotificarContatosComponent implements OnInit {
     this.storeService.modalBuscarMsg = '';
     this.storeService.numeroTelefone = '';
     this.storeService.notificarContatos = false;
+  }
+
+  onSubmit(form) {
+    console.log('Enviou o e-mail');
   }
 }
