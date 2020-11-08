@@ -5,7 +5,7 @@ import { StoreService } from '../shared/store.service';
 import { ModalMessageComponent } from '../modal-message/modal-message.component';
 
 @Component({
-  selector: 'app-contatoWpp',
+  selector: 'app-contato-wpp',
   templateUrl: './contatoWpp.component.html',
   styleUrls: ['./contatoWpp.component.css']
 })
@@ -13,6 +13,8 @@ import { ModalMessageComponent } from '../modal-message/modal-message.component'
 export class ContatoWppComponent implements OnInit {
     modalRef: BsModalRef;
     modalConfig: ModalOptions = { class: 'modal-sm modal-dialog-centered' };
+
+    isValid: boolean;
 
     constructor(private modalService: BsModalService,
                 private numerosClonadosService: NumerosClonadosService,
@@ -31,6 +33,7 @@ export class ContatoWppComponent implements OnInit {
 
         if (urlParams && code && code !== '' && code !== undefined) {
             console.log('EXECUTANDO REQUEST DO TOKEN');
+            this.isValid = true;
             const googleClientId = '464781618950-f2b0bp5aubjdicbfj10kv7lqejv888vs.apps.googleusercontent.com';
             const googleClientSceret = 'Y5I1R957rkEfpdviz8UiGcBC';
             const googleRedirectUrl = 'https://fuiclonadoarq.herokuapp.com/contatosApi';
@@ -39,6 +42,8 @@ export class ContatoWppComponent implements OnInit {
                 console.log('GET ATCCESS TOKEN: ', res);
                 this.obterContatos(res.token_type, res.refresh_token, res.access_token);
             });
+        } else {
+            this.isValid = false;
         }
     }
 

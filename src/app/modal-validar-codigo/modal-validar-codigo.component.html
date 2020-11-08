@@ -1,0 +1,19 @@
+<div class="modal-header div-header-modal">
+    <span>Informe o código enviado por SMS</span>
+</div>
+<div class="modal-body div-body-modal">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="div-form">
+        <div class="form-group default-component">
+            <label for="codigo" class="control-label" [class.label-error]="!codigo.valid && codigo.touched">Código</label>
+            <input type="text" ngModel name="codigo" required #codigo="ngModel" class="form-control form-text-box" id="codigo" placeholder="Insira o código">
+            <div class="field-error" *ngIf="!codigo.valid && codigo.touched">O campo Código é obrigatório</div>
+        </div>
+        <div class="div-footer-modal">
+            <button type="submit" class="btn btn-primary">ENVIAR</button>
+        </div>
+        
+    </form>
+</div>
+<div class="modal-footer div-footer-modal">
+    
+</div>

@@ -22,6 +22,8 @@ import { ContatoComponent } from './contato/contato.component';
 import { AccordionModule } from 'ngx-accordion';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContatoWppComponent } from './contatoWpp/contatoWpp.component';
+import { NotificarContatosComponent } from './notificar-contatos/notificar-contatos.component';
+import { ModalValidarCodigoComponent } from './modal-validar-codigo/modal-validar-codigo.component';
 
 @NgModule({
   declarations: [
@@ -32,9 +34,11 @@ import { ContatoWppComponent } from './contatoWpp/contatoWpp.component';
     ModalMessageComponent,
     ModalEnviarComponent,
     ModalBuscarNumeroComponent,
+    ModalValidarCodigoComponent,
     FaqComponent,
     ContatoComponent,
     ContatoWppComponent,
+    NotificarContatosComponent,
   ],
   imports: [
     FormsModule,
@@ -53,6 +57,7 @@ import { ContatoWppComponent } from './contatoWpp/contatoWpp.component';
     ModalMessageComponent,
     ModalEnviarComponent,
     ModalBuscarNumeroComponent,
+    ModalValidarCodigoComponent,
   ],
   providers: [StoreService],
   bootstrap: [AppComponent]

@@ -13,7 +13,7 @@ export class FaqComponent implements OnInit {
   }
 
   onSubmit(form) {
-    console.log("Enviou o e-mail")
+    console.log('Enviou o e-mail');
   }
 
 }

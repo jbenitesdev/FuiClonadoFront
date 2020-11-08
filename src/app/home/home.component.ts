@@ -1,5 +1,5 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
-import { ModalEnviarComponent } from '../modal-enviar/modal-enviar.component';
+import { ModalValidarCodigoComponent } from '../modal-validar-codigo/modal-validar-codigo.component';
 import { BsModalService, BsModalRef, ModalOptions } from 'ngx-bootstrap/modal';
 import { validate } from 'gerador-validador-cpf';
 import { NumerosClonadosService } from '../service/numeros-clonados.service';
@@ -26,27 +26,34 @@ export class HomeComponent implements OnInit {
     return validate(cpf);
   }
 
+  tratarNumero(numero: string) {
+    const result = numero.replace('(', '').replace(')', '').replace('-', '').replace(' ', '');
+    return '+55' + result;
+  }
+
   onSubmit(form) {
     if (form.status !== 'INVALID' && validate(form.controls.cpf.value)) {
-      this.numerosClonadosService.salvarRegistro(
-        form.controls.nome.value,
-        form.controls.cpf.value,
-        form.controls.numero.value,
-        form.controls.email.value,
-        form.controls.termo.value,
-        window.location.href).subscribe(res => {
-          if (res.status === 200) {
-            this.openModalEnviar(false);
-          } else {
-            this.openModalEnviar(true);
-          }
+      const numero = this.tratarNumero(form.controls.numero.value);
+
+      this.numerosClonadosService.verificarUsuario(numero, window.location.href).subscribe(res => {
+        if (res.status === 200) {
+          this.storeService.registroUsuario = {
+            nome : form.controls.nome.value,
+            cpf: form.controls.cpf.value,
+            numero: form.controls.numero.value,
+            email: form.controls.email.value,
+            termo: form.controls.termo.value
+          };
+
+          this.openModalValidarCodigo(numero);
+        }
       });
     }
   }
 
-  openModalEnviar(hasError: boolean) {
-    this.storeService.modalEnviarError = hasError;
-    this.modalRef = this.modalService.show(ModalEnviarComponent, this.modalConfig);
+  openModalValidarCodigo(numeroTelefone: string) {
+    this.storeService.numeroTelefone = numeroTelefone;
+    this.modalRef = this.modalService.show(ModalValidarCodigoComponent, this.modalConfig);
   }
 
   ngOnInit() {

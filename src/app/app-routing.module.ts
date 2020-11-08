@@ -5,6 +5,7 @@ import { VerificarNumeroComponent } from './verificar-numero/verificar-numero.co
 import { FaqComponent } from './faq/faq.component';
 import { ContatoComponent } from './contato/contato.component';
 import { ContatoWppComponent } from './contatoWpp/contatoWpp.component';
+import { NotificarContatosComponent } from './notificar-contatos/notificar-contatos.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent },
   { path: 'contato', component: ContatoComponent },
   { path: 'contatosApi', component: ContatoWppComponent },
+  { path: 'notificarContatos', component: NotificarContatosComponent }
 ];
 
 @NgModule({
