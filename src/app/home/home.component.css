@@ -232,8 +232,33 @@
     margin-top: 100px;
 }
 
+
+.card-video {
+    padding-left: 100px;
+    height: 200px;
+    width:350px;
+    opacity: 1;
+    color: #3C5768;
+}
+
 .card-ajudar {
-    height: 753px;
+    height: 850px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 0px 20px #00000033;
+    color: #3C5768;
+}
+
+.card-ajudar-2 {
+    height: 850px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 0px 20px #00000033;
+    color: #3C5768;
+}
+
+.card-ajudar-3 {
+    height: 850px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     box-shadow: 0px 0px 20px #00000033;
@@ -255,6 +280,7 @@
     color: #3C5768; 
     font-weight: bold; 
     font-size: 3rem;
+    text-align: center;
 }
 
 .div-card-ajudar-third .card-ajudar .card-span-title {
@@ -263,7 +289,8 @@
 
 .card-span-text {
     margin-top: 10px;
-    font-size: 2em;
+    font-size: 25px;
+    text-align: center;
 }
 
 .btn-card {
@@ -485,7 +512,7 @@
 }
 
 .btn-inscreva {
-    width: 240px;
+    width: 200px;
     height: 60px;
     background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
     mix-blend-mode: multiply;

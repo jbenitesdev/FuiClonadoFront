@@ -375,3 +375,22 @@
     /* mix-blend-mode: multiply;
     border-radius: 20px; */
 }
+
+.form-text-box {
+    width: 390px;
+    height: 50px;
+}
+
+.recupereinum:link, a:visited {
+    color: (internal value);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .recupereinum:link:active, a:visited:active {
+    color: (internal value);
+  }
+
+.recupereinum{
+    color: white;
+}

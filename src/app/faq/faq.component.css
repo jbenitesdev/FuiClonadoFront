@@ -14,6 +14,11 @@
     padding-left: 0px;
 }
 
+.div-contato2 {
+    display: flex;
+    flex-direction: column;
+}
+
 .span-title {
     text-align: center;
     font-weight: 700;
@@ -207,4 +212,47 @@
 .logo-branco {
     margin-top: 100px;
     margin-bottom: 80px;
+}
+
+.form-text-box {
+    width: 390px;
+    height: 50px;
+}
+
+.div-contato-text {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.span-contato {
+    font-size: 4em;
+    font-weight: 400;
+    color: #3C5768;
+}
+
+.div-faq-text {
+    font-size: 2em!important;
+    color: #3C5768!important;
+}
+
+.div-contato-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.div-contato-text-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-contato {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
 }
