@@ -186,56 +186,87 @@
             </div>
         </div>
     </div>
-    <div class="col-12 div-faq">
+    <div class="col-12 div-faq" >
         <div class="col-12 div-faq-title">
             <span class="col-12 span-title-faq">FAQ</span>
         </div>
-        <div class="col-12 container-card-estatisticas">
+        <div class="col-12 container-card-estatisticas" style="height:auto;">
             <div class="col-6 div-card-faq">
-                <div class="col-10 card-faq">
+                <div class="col-10 card-faq" style="height:auto;">
                     <div class="col-12 card-faq-span-title">
                         <span>Perguntas Frequentes</span>
                     </div>
                     <div class="col-12">
-                        <div class="div-span-faq">
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
-                        </div>
-                        <div class="div-span-faq">
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
-                        </div>
-                        <div class="div-span-faq">
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
-                        </div>
-                        <div class="div-span-faq">
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
-                        </div>
-                        <div class="div-span-faq">
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
-                        </div>
+                        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                            <ngb-panel title="O Fui Clonado recupera o meu número?">
+                                <ng-template ngbPanelContent>
+                                    R: NÃO, apenas ajudamos você a comunicar de forma mais rápida a todos os seus contatos e aos seus amigos do Facebook.
+                                </ng-template>
+                            </ngb-panel>
+                            <ngb-panel title="O Fui Clonado liga para mim solicitando algum dado ou dinheiro?">
+                                <ng-template ngbPanelContent>
+                                    R: NÃO, somos um grupo de especialista em tecnologia da informação e criamos o Fui Clonado para ajudar os usuários do Whatsapp.
+                                </ng-template>
+                            </ngb-panel>
+                            <ngb-panel title="Como retiro meu telefone da base de clonados depois que recuperei meu Whatsapp?">
+                              <ng-template ngbPanelContent>
+                                R: Clicando no link “Verificar” do Menu Superior e no link “recuperei meu número”, você receberá um SMS para validar se o número telefônico é mesmo seu e assim terá seus dados retirados do nosso banco de dados.
+                              </ng-template>
+                            </ngb-panel>
+        
+                            <ngb-panel title="Quais os passos para informar que eu fui clonado?">
+                                <ng-template ngbPanelContent>
+                                    <li style="padding-top: 10px;">
+                                        <ul>1. Inserir suas informações na página principal do site.</ul>                         
+                                        <ul>2. Informar código recebido por SMS.</ul>   
+                                        <ul>3. Efetuar login com o google para ter acesso a sua lista de contatos.</ul>
+                                        <ul>4. Opção: Compartilhar nas redes socias</ul>
+                                      </li> 
+                                </ng-template>
+                              </ngb-panel>
+                            </ngb-accordion> 
                     </div>
                 </div>
             </div>
             <div class="col-6 div-card-faq">
-                <div class="col-10 card-faq">
+                <div class="col-10 card-faq" style="height:auto;">
                     <div class="col-12 card-faq-span-title">
                         <span>Perguntas Frequentes</span>
                     </div>
                     <div class="col-12">
-                        <div class="div-span-faq">
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
-                        </div>
-                        <div class="div-span-faq">
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
-                        </div>
-                        <div class="div-span-faq">
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
-                        </div>
-                        <div class="div-span-faq">
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
-                        </div>
-                        <div class="div-span-faq">
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer elit.</span>
-                        </div>
+                        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                            <ngb-panel title="Os meus contatos do Google Contato eles recebem quantos avisos?">
+                                <ng-template ngbPanelContent>
+                                    R: Disparamos apenas um aviso para cada contato, somente no ato do cadastro, não disparamos nenhuma publicidade ou spam para seus contatos, vale lembrar também que os contatos registrados em seu Cartão SIM. Caso queira migra do cartão SIM para o Google Contatos para depois cadastrar em nossa base segue o passo a passo:
+                                    Basta estar com sua conta Google ativa em seu Android e seguir os passos abaixo:
+                                    <li style="padding-top: 10px;">
+                                        <ul>1. Depois de adicionar seu chip (SIM Card) vá até seus Contatos.</ul>                         
+                                        <ul>2. Abra o menu do app.</ul>   
+                                        <ul>3. Selecione Importar/Exportar.</ul>
+                                        <ul>4. Opção Importar do cartão SIM.</ul>
+                                        <ul>5. Aparecerá uma tela de “Salvar contatos no” e então você seleciona sua conta Google.</ul>
+                                      </li> 
+                                         
+                                </ng-template>
+                              </ngb-panel>
+                            <ngb-panel title="O Fui Clonado pede meu código de verificação do Whatsapp?">
+                                <ng-template ngbPanelContent>
+                                    R: NÃO, em momento algum pedimos nenhum dado do usuário seja por e-mail ou ligação.
+                              </ng-template>
+                            </ngb-panel>
+        
+                            <ngb-panel title="O número que consultei não consta na base de fui clonado, significa que ele não foi clonado?">
+                                <ng-template ngbPanelContent>
+                                    R: NÃO, ele pode ter sido clonado, porém ainda não deu tempo do responsável real pelo número cadastrar em nossa base. 
+                                </ng-template>
+                            </ngb-panel>
+                            <ngb-panel title="O Fui Clonado pede autorização a galeria de fotos do meu celular?">
+                                <ng-template ngbPanelContent>
+                                    R: NÃO, em momento algum solicitamos acesso a galeria de fotos do seu celular. 
+                                </ng-template>
+                            </ngb-panel>
+                            
+                        </ngb-accordion>
                     </div>
                 </div>
             </div>
