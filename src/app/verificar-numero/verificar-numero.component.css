@@ -394,3 +394,17 @@
 .recupereinum{
     color: white;
 }
+
+.alinhamento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+  }
+
+ngb-accordion {
+    text-align: center;
+}

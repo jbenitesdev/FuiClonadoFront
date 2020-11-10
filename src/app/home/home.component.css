@@ -536,3 +536,11 @@
     margin-top: 100px;
     margin-bottom: 80px;
 }
+
+li {
+    list-style-type: none;
+  }
+
+ngb-accordion {
+    text-align: center;
+} 

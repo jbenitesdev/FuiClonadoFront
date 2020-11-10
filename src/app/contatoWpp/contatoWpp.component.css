@@ -137,6 +137,50 @@
 
 .form-text-box {
     height: 60px;
+    width:400px;
+}
+
+.span-contato {
+    font-size: 4em;
+    font-weight: 400;
+    color: #3C5768;
+}
+
+.div-contato-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.div-faq-text {
+    font-size: 2em!important;
+    color: #3C5768!important;
+}
+
+.div-contato-text-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.div-contato-text {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.div-contato2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contato {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
 }
 
 .div-rodape {

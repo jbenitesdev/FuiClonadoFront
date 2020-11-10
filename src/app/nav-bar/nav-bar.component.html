@@ -1,20 +1,29 @@
+
 <div class="default-container col-12">
     <div class="col-12 div-nav-bar">
         <div class="col-3 div-logo">
             <img class="logo" src="./assets/img/logo/LogoFuiClonado.png">
         </div>
-        <div class="col-9 div-menu">
+
+        <div class="col-8 collapse div-menu" id="collapsibleNavbar">
             <a class="default-menu-item" routerLink='home'>Fui Clonado</a>
             <a class="default-menu-item" routerLink="verificarNumero">Verificar Número</a>
             <a class="default-menu-item" routerLink="faq">FAQ</a>
             <a class="default-menu-item" routerLink="contato">Contato</a>
-            <a routerLink="contatosApi">
-                <div class="menu-icon">
+            <!-- <a routerLink="contatosApi">
+                <div class="navbar-toggler menu-icon" data-toggle="collapse" data-target="#navmenu">
                     <div class="div-white-line"></div>
                     <div class="div-white-line"></div>
                     <div class="div-half-white-line"></div>
                 </div>
-            </a>
+            </a> -->
+        </div>
+        <div class="col-1">
+            <button style="z-index: 999;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false">
+            
+                <i class="fas fa-bars"></i>
+
+            </button>
         </div>
     </div>
 </div>
