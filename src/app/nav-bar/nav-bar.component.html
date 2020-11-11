@@ -4,12 +4,19 @@
         <div class="col-3 div-logo">
             <img class="logo" src="./assets/img/logo/LogoFuiClonado.png">
         </div>
-
-        <div class="col-8 collapse show div-menu" id="collapsibleNavbar">
+        <div class="col-8">
+            <div class="row collapse show multi-collapse" id="multiCollapseExample1">
+                <a style="padding-left:60px; padding-right: 40px;" class="default-menu-item" routerLink='home'>Fui Clonado</a>
+                <a style="padding-right: 40px;" class="default-menu-item" routerLink="verificarNumero">Verificar Número</a>
+                <a style="padding-right: 40px;" class="default-menu-item" routerLink="faq">FAQ</a>
+                <a style="padding-right: 40px;" class="default-menu-item" routerLink="contato">Contato</a>
+            </div>
+        </div>
+        <!-- <div class="col-8 div-menu" id="collapsibleNavbar">
             <a class="default-menu-item" routerLink='home'>Fui Clonado</a>
             <a class="default-menu-item" routerLink="verificarNumero">Verificar Número</a>
             <a class="default-menu-item" routerLink="faq">FAQ</a>
-            <a class="default-menu-item" routerLink="contato">Contato</a>
+            <a class="default-menu-item" routerLink="contato">Contato</a> -->
             <!-- <a routerLink="contatosApi">
                 <div class="navbar-toggler menu-icon" data-toggle="collapse" data-target="#navmenu">
                     <div class="div-white-line"></div>
@@ -17,11 +24,12 @@
                     <div class="div-half-white-line"></div>
                 </div>
             </a> -->
-        </div>
-        <div class="col-1">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false">
+        <!-- </div> -->
+        <div class="col-1" style="z-index: 999;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-controls="multiCollapseExample1" aria-expanded="false">
             
-                <i class="fas fa-bars"></i>
+                <!-- <i class="fas fa-bars"></i> -->
+                <img style="height:60px; width:60px;" src="./assets/img/icon/icone-barra-superior.png">
 
             </button>
         </div>

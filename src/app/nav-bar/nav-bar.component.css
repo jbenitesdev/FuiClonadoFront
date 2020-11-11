@@ -21,9 +21,7 @@
 }
 
 .div-menu {
-    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     padding-right: 0px;
     padding-left: 0px;
 }
@@ -66,3 +64,8 @@
     margin-left: 27px;
     opacity: 1;
 }
+
+button:hover, button:focus {
+    border: none;
+    outline: none;
+  }

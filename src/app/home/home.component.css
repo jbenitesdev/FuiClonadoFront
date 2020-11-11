@@ -415,6 +415,7 @@
     font-weight: 500;
     font-style: italic;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .div-span-faq {
@@ -542,5 +543,9 @@ li {
   }
 
 ngb-accordion {
-    text-align: center;
+    text-align: left;
+} 
+
+ngb-accordion title{
+    text-align: left;
 } 

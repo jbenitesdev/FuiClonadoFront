@@ -6,6 +6,7 @@ import { FaqComponent } from './faq/faq.component';
 import { ContatoComponent } from './contato/contato.component';
 import { ContatoWppComponent } from './contatoWpp/contatoWpp.component';
 import { NotificarContatosComponent } from './notificar-contatos/notificar-contatos.component';
+import { RemoverContatoComponent } from './remover-contato/remover-contato.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent },
   { path: 'contato', component: ContatoComponent },
   { path: 'contatosApi', component: ContatoWppComponent },
+  { path: 'removerContato', component: RemoverContatoComponent },
   { path: 'notificarContatos', component: NotificarContatosComponent }
 ];
 

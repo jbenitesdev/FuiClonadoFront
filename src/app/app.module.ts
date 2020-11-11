@@ -24,6 +24,7 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContatoWppComponent } from './contatoWpp/contatoWpp.component';
 import { NotificarContatosComponent } from './notificar-contatos/notificar-contatos.component';
 import { ModalValidarCodigoComponent } from './modal-validar-codigo/modal-validar-codigo.component';
+import { RemoverContatoComponent } from './remover-contato/remover-contato.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ModalValidarCodigoComponent } from './modal-validar-codigo/modal-valida
     ContatoComponent,
     ContatoWppComponent,
     NotificarContatosComponent,
+    RemoverContatoComponent,
   ],
   imports: [
     FormsModule,

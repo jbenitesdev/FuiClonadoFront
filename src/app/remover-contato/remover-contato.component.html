@@ -1,0 +1,109 @@
+<div class="default-container col-12">
+    <div>
+        <div class="col-12 div-contato">
+            
+            <div class="col-12" style="display:flex; align-items: center; justify-content: center;">
+                <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="div-form">
+                    <div class="col-12" style="display:flex; align-items: center; justify-content: center;">
+                    <span class="span-title">RECUPEREI <br>MEU NÚMERO</span>
+                    </div>
+                    <div class="col-12" style="display:flex; align-items: center; justify-content: center;">
+                    <span class="form-span-title">INFORME SEU NÚMERO</span>
+                    </div>
+                    <div class="form-group" style="display: flex; align-items: center; justify-content: center;">
+                        <!-- <input type="text" ngModel name="numero" #numero="ngModel" required [textMask]="{mask: telMask}" class="form-control form-text-box" id="numero" placeholder="Insira seu número com DDD"> -->
+                        <input type="text" ngModel name="numero" #numero="ngModel" class="form-control form-text-box" id="numero" placeholder="Insira seu número com DDD">
+                        <div class="field-error" *ngIf="!numero.valid && numero.touched">O campo Número é obrigatório</div>
+                    </div>
+                    <div style="display:flex; align-items: center; padding-bottom: 50px; justify-content: center;">
+                        <button type="submit" class="btn btn-default btn-enviar">
+                            <span class="span-enviar"><b>ENVIAR</b></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        
+
+        <div class="col-12 div-retangulo-branco">
+            <img class="img-retangulo-branco" src="./assets/img/bg/RetanguloArredondadoBG.png">
+        </div>
+    </div>
+    
+    <div class="col-12">
+        <div class="col-12 div-container-links">
+            <div class="col-8 div-links">
+                <img class="link-icon" src="./assets/img/icon/FacebookIcon.png">
+                <img class="link-icon" src="./assets/img/icon/InstagramIcon.png">
+                <img class="link-icon" src="./assets/img/icon/TelIcon.png">
+                <img class="link-icon" src="./assets/img/icon/MailIcon.png">
+                <img class="link-icon" src="./assets/img/icon/WhatsAppIcon.png">
+            </div>
+        </div>
+    </div>
+    <div class="col-12 container-contato">
+        <div class="col-12 div-contato2">
+            <div class="col-12 div-contato-text">
+                <div class="col-12 div-contato-text-container">
+                    <div class="col-12">
+                        <span class="span-contato">ENTRE EM CONTATO</span>
+                    </div>
+                </div>
+                <div class="col-12 div-contato-text-container">
+                    <div class="col-2"></div>
+                    <div class="col-8 div-faq-text">
+                        <span>Envie abaixo seu e-mail e entraremos em contato.</span>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            <div class="col-12 div-contato-action">
+            
+                <div class="row col-6" style="padding-top: 20px;">
+                    <input type="text" class="form-control form-text-box" placeholder="Insira o email">
+                    <button type="button" class="btn btn-success" style="background-color:#05C0A3;">
+                        <b>ENVIAR EMAIL</b>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-12 div-rodape">
+        <div class="col-12 div-logo-branco">
+            <img class="logo-branco" src="./assets/img/logo/LogoFuiClonadoBranco.png">
+        </div>
+    </div>
+</div>  
+        <!-- <div class="col-12">
+            <div class="col-12 div-entre-em-contato">
+                <span>ENTRE EM CONTATO</span>
+            </div> -->
+            <!-- <div class="col-12 div-texto-contato">
+                <span class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+            </div>
+            <div class="col-12 div-controles-contato">
+                <div class="col-4">
+                    <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="div-form-contato">
+                        <div class="form-group col-12 default-form-group">
+                            <input type="email" ngModel email name="email" required #email="ngModel" class="form-control form-text-box col-12" id="email" placeholder="Insira o email">
+                            <div class="field-error" *ngIf="!email.valid && email.touched">O campo Nome é obrigatório</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-2">
+                    <button type="submit" class="btn btn-default btn-inscrever">
+                        <span class="span-enviar">SE INSCREVA</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 div-rodape">
+        <div class="col-12 div-logo-branco">
+            <img class="logo-branco" src="./assets/img/logo/LogoFuiClonadoBranco.png">
+        </div>
+    </div> -->
+
