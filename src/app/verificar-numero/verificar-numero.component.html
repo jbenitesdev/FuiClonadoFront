@@ -1,15 +1,15 @@
 <div class="default-container col-12">
     <div class="contianer-info col-12">
         <div class="div-verificar-title col-12">
-            <span>VERIFIQUE O NÚMERO</span>
+            <span class="spantit">VERIFIQUE O NÚMERO</span>
         </div>
         <div class="div-sub-title col-12">
-            <span>VERIFIQUE SE O NÚMERO QUE VOCÊ BUSCA ESTÁ CLONADO</span>
+            <span class="spansubtit">VERIFIQUE SE O NÚMERO QUE VOCÊ BUSCA ESTÁ CLONADO</span>
         </div>
         <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="div-form">
             <div class="form-group">
                 <div class=" div-verificar-text col-12">
-                    <input type="text" ngModel name="numero" #numero="ngModel" required [textMask]="{mask: telMask}" class="form-control form-verificar-text-box col-6" id="numero" placeholder="Insira o número com DDD">
+                    <input type="text" ngModel name="numero" #numero="ngModel" required [textMask]="{mask: telMask}" class="form-control form-verificar-text-box col-md-6 col-xs-10" id="numero" placeholder="Insira o número com DDD">
                     <!-- <div class="field-error" *ngIf="!numero.valid && numero.touched">O campo Número é obrigatório</div> -->
                 </div>
             </div>
@@ -26,13 +26,13 @@
     <div class="imagem-bg">
         <img class="default-container col-12" src="./assets/img/bg/SiteFuiClonadoVerificarBG.png">
     </div>
-    <div class="col-12 div-faq">
+    <div class="col-md-12 col-xs-12 div-faq">
         <div class="col-12 div-faq-title">
             <span class="col-12 span-title-faq">FAQ</span>
         </div>
-        <div class="col-12 container-card-estatisticas" style="height:auto; padding-bottom: 30px;">
-            <div class="col-6 div-card-faq">
-                <div class="col-10 card-faq" style="height:auto;">
+        <div class="col-md-12 col-xs-12 container-card-estatisticas" style="height:auto;">
+            <div class="col-md-6 col-xs-12 div-card-faq">
+                <div class="col-md-10 col-xs-12 card-faq" style="height:auto; padding-bottom: 30px;">
                     <div class="col-12 card-faq-span-title">
                         <span>Perguntas Frequentes</span>
                     </div>
@@ -84,8 +84,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 div-card-faq">
-                <div class="col-10 card-faq" style="height:auto; padding-bottom: 30px;">
+            <div class="col-md-6 col-xs-12 div-card-faq">
+                <div class="col-md-10 col-xs-12 card-faq" style="height:auto; padding-bottom: 30px;">
                     <div class="col-12 card-faq-span-title">
                         <span>Perguntas Frequentes</span>
                     </div>
@@ -145,11 +145,11 @@
         <div class="col-12 container-card-links">
             <div class="col-12 div-container-links">
                 <div class="col-10 div-links">
-                    <img class="link-icon" src="./assets/img/icon/FacebookIcon.png">
-                    <img class="link-icon" src="./assets/img/icon/InstagramIcon.png">
-                    <img class="link-icon" src="./assets/img/icon/TelIcon.png">
-                    <img class="link-icon" src="./assets/img/icon/MailIcon.png">
-                    <img class="link-icon" src="./assets/img/icon/WhatsAppIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/FacebookIcon.png" height="5px;" width="40px;">
+                    <img class="link-icon" src="./assets/img/icon/InstagramIcon.png" height="5px;" width="40px;">
+                    <img class="link-icon" src="./assets/img/icon/TelIcon.png" height="5px;" width="40px;">
+                    <img class="link-icon" src="./assets/img/icon/MailIcon.png" height="5px;" width="40px;">
+                    <img class="link-icon" src="./assets/img/icon/WhatsAppIcon.png" height="5px;" width="40px;">
                 </div>
             </div>
         </div>
@@ -171,7 +171,7 @@
                 </div>
                 <div class="col-12 div-contato-action">
 
-                <div class="row col-6" style="padding-top: 20px;">            
+                <div class="row col-6 form-email-contato" style="padding-top: 20px;">            
                         <input type="text" class="form-control form-text-box" placeholder="Insira o email">
                         <button type="button" class="btn btn-success" style="background-color:#05C0A3;" >
                             <b>ENVIAR EMAIL</b>
