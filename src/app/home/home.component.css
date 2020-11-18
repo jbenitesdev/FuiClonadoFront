@@ -1064,6 +1064,14 @@ ngb-accordion title{
         align-items: left;
     }
 
+    .triangle-bottomright {
+        position: relative;
+        width: 0;
+        height: 0;
+        border-bottom: 100px solid #FFFFFF;
+        border-left: 345px solid transparent;
+    }
+
     .div-form { 
         width: 345px;
         height: 550px;
@@ -1340,7 +1348,7 @@ ngb-accordion title{
         display: flex;
         justify-content: center;
         padding-top: 30px;
-        width: 420px;
+        width: 400px;
         margin-left: -40px;
     }
 

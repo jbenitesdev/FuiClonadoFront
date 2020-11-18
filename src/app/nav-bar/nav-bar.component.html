@@ -23,63 +23,55 @@
         </div>  
 
         <div *ngIf="mobile" class="col-xs-8 dropdown">
-            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <!-- <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
                 <!-- <img style="height:60px; width:60px;" src="./assets/img/icon/icone-barra-superior.png"> -->
-                <a href="menu" id="toggle"><span></span></a>
+                <!-- <a href="menu" id="toggle"><span></span></a>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
                 <a class="dropdown-item" routerLink="home">Fui Clonado</a>
                 <a class="dropdown-item" routerLink="verificarNumero">Verificar Número</a>
                 <a class="dropdown-item" routerLink="faq">FAQ</a>
                 <a class="dropdown-item" routerLink="contato">Contato</a>
-            </div>   
+            </div>    -->
+
+            <a class="btn btn-default dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"><i class="fas fa-align-justify fa-3x"></i></a>
+            
+            <div class="dropdown-menu">
+                <a class="dropdown-item" routerLink="home">Fui Clonado</a>
+                <a class="dropdown-item" routerLink="verificarNumero">Verificar Número</a>
+                <a class="dropdown-item" routerLink="faq">FAQ</a>
+                <a class="dropdown-item" routerLink="contato">Contato</a>
+            </div>
         </div>
 
     </div>
     
 </div>
 
-<!-- <script>
-    var theToggle = document.getElementById('toggle');
-
-// based on Todd Motto functions
-// https://toddmotto.com/labs/reusable-js/
-
-// hasClass
-function hasClass(elem, className) {
-	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
-}
-// addClass
-function addClass(elem, className) {
-    if (!hasClass(elem, className)) {
-    	elem.className += ' ' + className;
-    }
-}
-// removeClass
-function removeClass(elem, className) {
-	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
-	if (hasClass(elem, className)) {
-        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
-            newClass = newClass.replace(' ' + className + ' ', ' ');
+<script>
+function topNavToggle() {
+    var topNavList = document.getElementById("topNavList");
+    var topNavToggle = document.getElementById("topNavToggle");
+    var topNavListLi = document.querySelectorAll("#topNavList li");
+    
+    if (topNavList.className === "nav-top__nav-list") {
+        topNavList.className += " responsive";
+        topNavToggle.className += " toggled";
+        for (let i = 0; i < topNavListLi.length; i++) {
+          var hiddenAttribute = document.createAttribute("hidden");
+          //topNavListLi[i].setAttribute('hidden',false);
+          topNavListLi[i].setAttributeNode(hiddenAttribute);
         }
-        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-    }
-}
-// toggleClass
-function toggleClass(elem, className) {
-	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
-    if (hasClass(elem, className)) {
-        while (newClass.indexOf(" " + className + " ") >= 0 ) {
-            newClass = newClass.replace( " " + className + " " , " " );
-        }
-        elem.className = newClass.replace(/^\s+|\s+$/g, '');
     } else {
-        elem.className += ' ' + className;
+        topNavList.className = "nav-top__nav-list";
+        topNavToggle.className = "nav-top__toggle-button";
+        setTimeout(function(){
+          for (let i = 0; i < topNavListLi.length; i++) {
+            //topNavListLi[i].setAttribute('hidden',true);
+            topNavListLi[i].removeAttribute('hidden');
+          }
+        },300);
     }
 }
-
-theToggle.onclick = function() {
-   toggleClass(this, 'on');
-   return false;
-}
-</script> -->
+</script>
