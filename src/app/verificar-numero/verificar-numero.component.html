@@ -1,10 +1,7 @@
 <div class="default-container col-12">
     <div class="contianer-info col-12">
         <div class="div-verificar-title col-12">
-            <span class="spantit">VERIFIQUE O NÚMERO</span>
-        </div>
-        <div class="div-sub-title col-12">
-            <span class="spansubtit">VERIFIQUE SE O NÚMERO QUE VOCÊ BUSCA ESTÁ CLONADO</span>
+            <span class="spantit">VERIFIQUE SE O NÚMERO QUE VOCÊ BUSCA ESTÁ CLONADO</span>
         </div>
         <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="div-form">
             <div class="form-group">
@@ -18,7 +15,7 @@
                     <span class="span-enviar">ENVIAR</span>
                 </button>
             </div>
-            <div class="col-6 offset-5" style="padding-top: 10px;">
+            <div class="divrecupereinum">
             <a href="removerContato" class="recupereinum"> > <b>Recuperei meu número</b></a>
             </div>
         </form>
@@ -26,13 +23,13 @@
     <div class="imagem-bg">
         <img class="default-container col-12" src="./assets/img/bg/SiteFuiClonadoVerificarBG.png">
     </div>
-    <div class="col-md-12 col-xs-12 div-faq">
+    <div class="col-md-12 col-xs-12 col-sm-12 div-faq">
         <div class="col-12 div-faq-title">
             <span class="col-12 span-title-faq">FAQ</span>
         </div>
-        <div class="col-md-12 col-xs-12 container-card-estatisticas" style="height:auto;">
-            <div class="col-md-6 col-xs-12 div-card-faq">
-                <div class="col-md-10 col-xs-12 card-faq" style="height:auto; padding-bottom: 30px;">
+        <div class="col-md-12 col-xs-12 col-sm-12 container-card-estatisticas">
+            <div class="col-md-6 col-xs-12 col-sm-12 div-card-faq">
+                <div class="col-md-10 col-xs-12 col-sm-12 card-faq">
                     <div class="col-12 card-faq-span-title">
                         <span>Perguntas Frequentes</span>
                     </div>
@@ -41,51 +38,53 @@
                             <!-- <ngb-panel title="O Fui Clonado recupera o meu número?"> -->
                             <ngb-panel>    
                                 <ng-template ngbPanelTitle>
-                                    <div>O Fui Clonado recupera o meu número?</div>
+                                    <div class="ngbTitleCard">O Fui Clonado recupera o meu número?</div>
                                 </ng-template>
                                 <ng-template ngbPanelContent>
-                                    R: NÃO, apenas ajudamos você a comunicar de forma mais rápida a todos os seus contatos e aos seus amigos do Facebook.
+                                    <div class="ngbContentCard">R: NÃO, apenas ajudamos você a comunicar de forma mais rápida a todos os seus contatos e aos seus amigos do Facebook.</div>
                                 </ng-template>
                             </ngb-panel>
                             <ngb-panel>    
                                 <ng-template ngbPanelTitle>
-                                    <div>O Fui Clonado liga para mim solicitando algum dado<br> ou dinheiro?</div>
+                                    <div class="ngbTitleCard">O Fui Clonado liga para mim solicitando algum dado<br> ou dinheiro?</div>
                                 </ng-template>
                             <!-- <ngb-panel title="O Fui Clonado liga para mim solicitando algum dado ou dinheiro?"> -->
                                 <ng-template ngbPanelContent>
-                                    R: NÃO, somos um grupo de especialista em tecnologia da informação e criamos o Fui Clonado para ajudar os usuários do Whatsapp.
+                                    <div class="ngbContentCard">R: NÃO, somos um grupo de especialista em tecnologia da informação e criamos o Fui Clonado para ajudar os usuários do Whatsapp.</div>
                                 </ng-template>
                             </ngb-panel>
                             <ngb-panel>    
                                 <ng-template ngbPanelTitle>
-                                    <div>Como retiro meu telefone da base de clonados depois <br>que recuperei meu Whatsapp?</div>
+                                    <div class="ngbTitleCard">Como retiro meu telefone da base de clonados depois <br>que recuperei meu Whatsapp?</div>
                                 </ng-template>
                             <!-- <ngb-panel title="Como retiro meu telefone da base de clonados depois que recuperei meu Whatsapp?"> -->
                               <ng-template ngbPanelContent>
-                                R: Clicando no link “Verificar” do Menu Superior e no link “recuperei meu número”, você receberá um SMS para validar se o número telefônico é mesmo seu e assim terá seus dados retirados do nosso banco de dados.
+                                <div class="ngbContentCard">R: Clicando no link “Verificar” do Menu Superior e no link “recuperei meu número”, você receberá um SMS para validar se o número telefônico é mesmo seu e assim terá seus dados retirados do nosso banco de dados.</div>
                               </ng-template>
                             </ngb-panel>
                             
                             <ngb-panel>    
                                 <ng-template ngbPanelTitle>
-                                    <div>Quais os passos para informar que eu fui clonado?</div>
+                                    <div class="ngbTitleCard">Quais os passos para informar que eu fui clonado?</div>
                                 </ng-template>
                             <!-- <ngb-panel title="Quais os passos para informar que eu fui clonado?"> -->
                                 <ng-template ngbPanelContent>
-                                    <li style="padding-top: 10px;">
+                                    <div class="ngbContentCard">
+                                    <li>
                                         <ul>1. Inserir suas informações na página principal do site.</ul>                         
                                         <ul>2. Informar código recebido por SMS.</ul>   
                                         <ul>3. Efetuar login com o google para ter acesso a sua lista de contatos.</ul>
                                         <ul>4. Opção: Compartilhar nas redes socias</ul>
                                       </li> 
+                                    </div>
                                 </ng-template>
                               </ngb-panel>
                             </ngb-accordion>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xs-12 div-card-faq">
-                <div class="col-md-10 col-xs-12 card-faq" style="height:auto; padding-bottom: 30px;">
+            <div class="col-md-6 col-xs-12 col-sm-12 div-card-faq">
+                <div class="col-md-10 col-xs-12 col-sm-12 card-faq">
                     <div class="col-12 card-faq-span-title">
                         <span>Perguntas Frequentes</span>
                     </div>
@@ -93,47 +92,47 @@
                         <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
                             <ngb-panel>    
                                 <ng-template ngbPanelTitle>
-                                    <div>Os meus contatos do Google Contato eles recebem<br> quantos avisos?</div>
+                                    <div class="ngbTitleCard">Os meus contatos do Google Contato eles recebem<br> quantos avisos?</div>
                                 </ng-template>
                             <!-- <ngb-panel title="Os meus contatos do Google Contato eles recebem quantos avisos?"> -->
                                 <ng-template ngbPanelContent>
-                                    R: Disparamos apenas um aviso para cada contato, somente no ato do cadastro, não disparamos nenhuma publicidade ou spam para seus contatos, vale lembrar também que os contatos registrados em seu Cartão SIM. Caso queira migra do cartão SIM para o Google Contatos para depois cadastrar em nossa base segue o passo a passo:
+                                    <div class="ngbContentCard">R: Disparamos apenas um aviso para cada contato, somente no ato do cadastro, não disparamos nenhuma publicidade ou spam para seus contatos, vale lembrar também que os contatos registrados em seu Cartão SIM. Caso queira migra do cartão SIM para o Google Contatos para depois cadastrar em nossa base segue o passo a passo:
                                     Basta estar com sua conta Google ativa em seu Android e seguir os passos abaixo:
-                                    <li style="padding-top: 10px;">
+                                    <li>
                                         <ul>1. Depois de adicionar seu chip (SIM Card) vá até seus Contatos.</ul>                         
                                         <ul>2. Abra o menu do app.</ul>   
                                         <ul>3. Selecione Importar/Exportar.</ul>
                                         <ul>4. Opção Importar do cartão SIM.</ul>
                                         <ul>5. Aparecerá uma tela de “Salvar contatos no” e então você seleciona sua conta Google.</ul>
                                       </li> 
-                                         
+                                    </div>     
                                 </ng-template>
                               </ngb-panel>
                               <ngb-panel>    
                                 <ng-template ngbPanelTitle>
-                                    <div>O Fui Clonado pede meu código de verificação do <br>Whatsapp?</div>
+                                    <div class="ngbTitleCard">O Fui Clonado pede meu código de verificação do <br>Whatsapp?</div>
                                 </ng-template>
                             <!-- <ngb-panel title="O Fui Clonado pede meu código de verificação do Whatsapp?"> -->
                                 <ng-template ngbPanelContent>
-                                    R: NÃO, em momento algum pedimos nenhum dado do usuário seja por e-mail ou ligação.
+                                    <div class="ngbContentCard"> R: NÃO, em momento algum pedimos nenhum dado do usuário seja por e-mail ou ligação.</div>
                               </ng-template>
                             </ngb-panel>
                             <ngb-panel>    
                                 <ng-template ngbPanelTitle>
-                                    <div>O número que consultei não consta na base de fui <br>clonado, significa que ele não foi clonado?</div>
+                                    <div class="ngbTitleCard">O número que consultei não consta na base de fui <br>clonado, significa que ele não foi clonado?</div>
                                 </ng-template>
                             <!-- <ngb-panel title="O número que consultei não consta na base de fui clonado, significa que ele não foi clonado?"> -->
                                 <ng-template ngbPanelContent>
-                                    R: NÃO, ele pode ter sido clonado, porém ainda não deu tempo do responsável real pelo número cadastrar em nossa base. 
+                                    <div class="ngbContentCard">R: NÃO, ele pode ter sido clonado, porém ainda não deu tempo do responsável real pelo número cadastrar em nossa base. </div>
                                 </ng-template>
                             </ngb-panel>
                             <ngb-panel>    
                                 <ng-template ngbPanelTitle>
-                                    <div>O Fui Clonado pede autorização a galeria de fotos<br> do meu celular?</div>
+                                    <div class="ngbTitleCard">O Fui Clonado pede autorização a galeria de fotos<br> do meu celular?</div>
                                 </ng-template>
                             <!-- <ngb-panel title="O Fui Clonado pede autorização a galeria de fotos do meu celular?"> -->
                                 <ng-template ngbPanelContent>
-                                    R: NÃO, em momento algum solicitamos acesso a galeria de fotos do seu celular. 
+                                    <div class="ngbContentCard">R: NÃO, em momento algum solicitamos acesso a galeria de fotos do seu celular. </div>
                                 </ng-template>
                             </ngb-panel>
                             
@@ -142,14 +141,14 @@
                 </div>
             </div>
         </div> 
-        <div class="col-12 container-card-links">
+        <div class="col-md-12 col-xs-12 col-sm-12 div-main-container-link">
             <div class="col-12 div-container-links">
-                <div class="col-10 div-links">
-                    <img class="link-icon" src="./assets/img/icon/FacebookIcon.png" height="5px;" width="40px;">
-                    <img class="link-icon" src="./assets/img/icon/InstagramIcon.png" height="5px;" width="40px;">
-                    <img class="link-icon" src="./assets/img/icon/TelIcon.png" height="5px;" width="40px;">
-                    <img class="link-icon" src="./assets/img/icon/MailIcon.png" height="5px;" width="40px;">
-                    <img class="link-icon" src="./assets/img/icon/WhatsAppIcon.png" height="5px;" width="40px;">
+                <div class="col-12 div-links">
+                    <img class="link-icon" src="./assets/img/icon/FacebookIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/InstagramIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/TelIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/MailIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/WhatsAppIcon.png">
                 </div>
             </div>
         </div>
@@ -171,9 +170,9 @@
                 </div>
                 <div class="col-12 div-contato-action">
 
-                <div class="row col-6 form-email-contato" style="padding-top: 20px;">            
+                <div class="row col-6 form-email-contato">            
                         <input type="text" class="form-control form-text-box" placeholder="Insira o email">
-                        <button type="button" class="btn btn-success" style="background-color:#05C0A3;" >
+                        <button type="button" class="btn btn-success">
                             <b>ENVIAR EMAIL</b>
                         </button>
                 </div>

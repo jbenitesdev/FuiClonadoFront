@@ -129,6 +129,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    width:800px;
     height: 80px;
     background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
     border-radius: 64px;
@@ -137,6 +138,7 @@
 
 .link-icon {
     height: 60px;
+    width:60px;
     cursor: pointer;
 }
 
@@ -170,6 +172,13 @@
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+
+    .titcontato{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .div-contato{
         display:flex;
         align-items: center;
@@ -189,10 +198,8 @@
     .span-title {
         text-align: center;
         font-weight: 700;
-        font-size: 2em;
+        font-size: 30px;
         font-style: italic;
-        padding-right: 0px;
-        padding-left: 0px;
         color: #FFFFFF;
         margin-top: -80px;
     }
@@ -220,6 +227,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-evenly;
+        width:250px;
         height: 40px;
         background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
         border-radius: 64px;
@@ -253,12 +262,46 @@
     }
 
     .div-container-links {
-        height: 120px;
+        height: 80px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding-bottom: -150px;
+    }
+
+    .div-main-container-link{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .link-icon {
+        height: 30px;
+        width:30px;
+        cursor: pointer;
+    }
+
+  }
+
+  @media only screen and (max-width: 400px) {
+
+    .form-text-box{
+        width:230px;
+    }
+
+    .span-title {
+        font-weight: 700;
+        font-size: 35px;
+        font-style: italic;
+        color: #FFFFFF;
+        margin-top: -80px;
+    }
+
+    .titcontato{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:1200px;
     }
 
   }

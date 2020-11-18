@@ -1,3 +1,16 @@
+.li{
+    padding-top: 10px;
+}
+
+.form-email-contato{
+    padding-top: 20px;
+}
+
+.btn-success{
+    background-color:#05C0A3;
+}
+
+
 .default-container {
     padding-right: 0px;
     padding-left: 0px;
@@ -41,6 +54,8 @@
 
 .div-title-b {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: -30px;
 }
 
@@ -215,6 +230,13 @@
     margin-top: 30px;
 }
 
+.container-card-faq {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    height: auto;
+}
+
 .div-card-ajudar-first {
     display: flex;
     flex-direction: row;
@@ -242,27 +264,30 @@
 }
 
 .card-ajudar {
-    height: 850px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     box-shadow: 0px 0px 20px #00000033;
     color: #3C5768;
+    height:auto; 
+    padding-bottom: 30px;
 }
 
 .card-ajudar-2 {
-    height: 850px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     box-shadow: 0px 0px 20px #00000033;
     color: #3C5768;
+    height:auto; 
+    padding-bottom: 30px;
 }
 
 .card-ajudar-3 {
-    height: 850px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     box-shadow: 0px 0px 20px #00000033;
     color: #3C5768;
+    height:auto; 
+    padding-bottom: 30px;
 }
 
 .card-ajudar div, .card-estatisticas div {
@@ -293,7 +318,25 @@
     text-align: center;
 }
 
-.btn-card {
+.btn-card-first {
+    width: 175px;
+    height: 60px;
+    margin-top: 25px;
+    background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+}
+
+.btn-card-second {
+    width: 175px;
+    height: 60px;
+    margin-top: 25px;
+    background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+}
+
+.btn-card-third {
     width: 175px;
     height: 60px;
     margin-top: 25px;
@@ -344,7 +387,7 @@
     color: #3C5768;
 }
 
-.card-estatisticas {
+.card-estatisticas-first {
     height: 205px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -352,8 +395,29 @@
     color: #3C5768;
 }
 
+.card-estatisticas-second {
+    height: 205px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 0px 20px #00000033;
+    color: #3C5768;
+}
+
+.card-estatisticas-third {
+    height: 205px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 0px 20px #00000033;
+    color: #3C5768;
+}
+
+
 .card-estatisticas-fourth {
     height: 240px!important;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 0px 20px #00000033;
+    color: #3C5768;
 }
 
 .card-estatisticas-span-title {
@@ -397,7 +461,8 @@
 }
 
 .card-faq {
-    height: 420px;
+    height:auto; 
+    padding-bottom: 30px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     box-shadow: 0px 0px 20px #00000033;
@@ -446,6 +511,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    width:800px;
     height: 80px;
     background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
     border-radius: 64px;
@@ -454,6 +520,7 @@
 
 .link-icon {
     height: 60px;
+    width:60px;
     cursor: pointer;
 }
 
@@ -550,27 +617,631 @@ ngb-accordion title{
     text-align: left;
 } 
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+.div-main-container-link{
+    padding-top: 200px;
+}
+
+.card-ajudar-icon{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.card-ajudar-acessarbtn2{
+    display:flex; 
+    padding-top: 65px;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.card-ajudar-acessarbtn3{
+    display:flex; 
+    padding-top:170px;
+    justify-content: center; 
+    align-items: center;
+
+}
 
 
-    .div-container-links {
-        height: 100px;
+@media only screen and (max-width: 768px){
+  
+    .div-title-a {
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding-bottom: -150px;
+        margin-top: 30%;
+    }
+    .div-title-b {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -20px;
+    }
+    
+    .span-title-esquerdo { 
+        font-size: 3rem;
+        font-weight: 400;
+        
+    }
+    
+    .card-video {
+        padding-left: 30px;
+        height: 200px;
+        width:350px;
+        opacity: 1;
+        color: #3C5768;
+    }
+
+    .div-formulario {
+        display: flex;
+        flex-direction: row;
+        height: 800px;
+        background: transparent linear-gradient(0deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .span-preencha-formulario {
+        position: absolute;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 21px;
+        margin-left: 20%;
+    }
+
+    .div-formulario-esquerdo {
+        display: inline;
+        letter-spacing: 0px;
+        color: #3C5768;
+        text-align: left;
+    }
+
+    .form-span-title {
+        color: #3C5768; 
+        font-weight: bold; 
+        font-size: 2rem;
+    }
+
+    .div-formulario-direito {
+        display: flex;
+        padding-top: 6%;
+        text-align: left;
+    }
+
+    .control-label{
+    font-size: 20px;
+    }
+
+    .form-text-box {
+        width: 240px;
+        height: 50px;
+    }
+
+    .div-form span:nth-child(2) {
+        margin-top: -15px;
+    }
+    
+    .div-form label {
+        color: #3C5768; 
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .div-form { 
+        width: 354px;
+        height: 624px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 20px #00000033;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 1;
+    }
+
+    .card-span-title {
+        margin-top: 5px;
+        color: #3C5768; 
+        font-weight: bold; 
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .lbl-aceitar-termos {
+        font-size: 1em!important;
+        margin-left: 17px;
+        margin-bottom: 0px;
+    }
+
+    .span-enviar {
+        font-size: 1em;
+        color: #FFFFFF;
+    }
+
+    .btn-enviar {
+        width: 125px;
+        height: 40px;
+        margin-top: 10px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        mix-blend-mode: multiply;
+        border-radius: 20px;
+    }
+
+    .btn-card-first {
+        width: 120px;
+        height: 40px;
+        margin-top: 140px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        mix-blend-mode: multiply;
+        border-radius: 10px;
+    }
+
+    .btn-card-second {
+        width: 120px;
+        height: 40px;
+        margin-top: 65px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        mix-blend-mode: multiply;
+        border-radius: 10px;
+    }
+
+    .btn-card-third {
+        width: 120px;
+        height: 40px;
+        margin-top: 27px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        mix-blend-mode: multiply;
+        border-radius: 10px;
+    }
+
+    .span-acessar {
+        font-size: 1em;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+    
+
+    .div-card-ajudar-first {
+        display: flex;
+        flex-direction: row;
+        padding-left: 5px;
+        padding-right:5px;
+    }
+    
+    .div-card-ajudar-second {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        padding-left: 5px;
+        padding-right:5px;
+    }
+    
+    .div-card-ajudar-third {
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        padding-left: 5px;
+        padding-right:5px;
+    }
+
+    .container-card-ajudar{
+        padding-left: 5px;
+        padding-right:5px;
+    }
+
+    .card-ajudar {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        box-shadow: 0px 0px 20px #00000033;
+        color: #3C5768;
+        height:auto; 
+        padding-bottom: 30px;
+    }
+    
+    .card-ajudar-2 {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        box-shadow: 0px 0px 20px #00000033;
+        color: #3C5768;
+        height:auto; 
+        padding-bottom: 30px;
+    }
+    
+    .card-ajudar-3 {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        box-shadow: 0px 0px 20px #00000033;
+        color: #3C5768;
+        height:auto; 
+        padding-bottom: 30px;
+    }
+
+    .card-ajudar-acessarbtn2{
+        display:flex; 
+        padding-top:285px;
+        justify-content: center; 
+        align-items: center;
+    
+    }
+
+    .card-ajudar-acessarbtn3{
+        display:flex; 
+        padding-top:620px;
+        justify-content: center; 
+        align-items: center;
+    
+    }
+
+    .card-estatisticas-span-title {
+        margin-top: 5px;
+        color: #3C5768; 
+        font-weight: bold; 
+        font-size: 2rem;
+    }
+
+    .card-estatisticas-span-text {
+        margin-top: 1px;
+        font-size: 1em;
+    }
+
+    .div-card-estatisticas-first {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    .div-card-estatisticas-second {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    .div-card-estatisticas-third {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    .div-card-estatisticas-fourth {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .card-estatisticas-first {
+        height: 110px!important;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        box-shadow: 0px 0px 20px #00000033;
+        color: #3C5768;
+    }
+    
+    .card-estatisticas-second {
+        height: 110px!important;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        box-shadow: 0px 0px 20px #00000033;
+        color: #3C5768;
+    }
+    
+    .card-estatisticas-third {
+        height: 130px!important;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        box-shadow: 0px 0px 20px #00000033;
+        color: #3C5768;
+    }
+    
+    .card-estatisticas-fourth {
+        height: 130px!important;
+    }
+
+    .card-estatisticas-span-text-fourth {
+        margin-top: 1px;
+        font-size: 1em;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .div-links {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-evenly;
+        width:250px;
         height: 40px;
         background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
         border-radius: 64px;
         opacity: 1;
+    }
+
+    .div-container-links {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-main-container-link{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+    .link-icon {
+        height: 30px;
+        width:30px;
+        cursor: pointer;
+    }
+
+    .ngbTitleCard{
+        font-size: 13px;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+    }
+
+    .ngbContentCard{
+        font-size: 11px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    /* For mobile phones: */
+
+    .div-formulario {
+        display: block;
+        height: 1100px;
+        background: transparent linear-gradient(0deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .div-formulario-esquerdo {
+        display: block;
+        letter-spacing: 0px;
+        color: #3C5768;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .div-title-a {
+        display: block;
+        margin-top: 10%;
+    }
+    .div-title-b {
+        display: block;
+        margin-top: -20px;
+    }
+    
+    .span-title-esquerdo { 
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .card-video {
+        padding-left: 0px;
+        height: 200px;
+        width:350px;
+        opacity: 1;
+        color: #3C5768;
+    }
+
+    .div-title-c {
+        display: inline;
+    }
+
+    .div-group-arrow-components {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .arrow-icon-img {
+        width: 45px;
+        height: 50px;
+        z-index: 20;
+        position: absolute;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .container-preencha-formulario {
+        display: flex;
+        height: 65px;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .div-form { 
+        width: 345px;
+        height: 550px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 20px #00000033;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left:0px;
+        opacity: 1;
+    }
+
+    .span-title-ajudar {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #3C5768;
+    }
+
+    .div-card-ajudar-first {
+        display: block;
+    }
+
+    .div-card-ajudar-second {
+        display: block;
+    }
+
+    .div-card-ajudar-third {
+        display: block;
+        margin-top: 50px;
+    }
+
+
+    .card-ajudar {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        box-shadow: 0px 0px 20px #00000033;
+        color: #3C5768;
+        height:auto; 
+        padding-bottom: 30px;
+    }
+    
+    .card-ajudar-2 {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        box-shadow: 0px 0px 20px #00000033;
+        color: #3C5768;
+        height:auto; 
+        padding-bottom: 30px;
+    }
+    
+    .card-ajudar-3 {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        box-shadow: 0px 0px 20px #00000033;
+        color: #3C5768;
+        height:auto; 
+        padding-bottom: 30px;
+    }
+
+    .span-title-estatisticas {
+        font-size: 21px;
+        font-weight: 400;
+        color: #3C5768;
+    }
+
+    .card-span-text{
+        font-size: 1rem;
+    }
+    .container-card-ajudar, .container-card-estatisticas {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .container-card-faq {
+        display: block;
+        margin-top: 30px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+
+    .card-ajudar-acessarbtn2{
+        display:flex; 
+        padding-top: 10px;
+        justify-content: center; 
+        align-items: center;
+    
+    }
+    
+    .card-ajudar-acessarbtn3{
+        display:flex; 
+        padding-top:10px;
+        justify-content: center; 
+        align-items: center;
+    
+    }
+
+    .btn-card-first {
+        width: 120px;
+        height: 40px;
+        margin-top: 25px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        mix-blend-mode: multiply;
+        border-radius: 10px;
+    }
+
+    .btn-card-second {
+        width: 120px;
+        height: 40px;
+        margin-top: 25px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        mix-blend-mode: multiply;
+        border-radius: 10px;
+    }
+
+    .btn-card-third {
+        width: 120px;
+        height: 40px;
+        margin-top: 25px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        mix-blend-mode: multiply;
+        border-radius: 10px;
+    }
+
+    .div-estatisticas {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .div-card-estatisticas-first {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .div-card-estatisticas-second {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .div-card-estatisticas-third {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .div-card-estatisticas-fourth {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+
+    .div-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width:250px;
+        height: 40px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        border-radius: 64px;
+        opacity: 1;
+    }
+
+    .div-container-links {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-main-container-link{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    .link-icon {
+        height: 30px;
+        width:30px;
+        cursor: pointer;
     }
 
     .span-contato {
@@ -617,7 +1288,7 @@ ngb-accordion title{
     .default-container {
         padding-right: 0px;
         padding-left: 0px;
-        height:400px;
+        height:200px;
     }
     .spantit{
         font-size: 14pt;
@@ -628,14 +1299,24 @@ ngb-accordion title{
     .div-card-faq {
         display: flex;
         justify-content: center;
+        padding-top: 30px;
+        width: 420px;
+        margin-left: -40px;
     }
 
-    .div-formulario {
-        display: flex;
-        height: 768px;
-        background: transparent linear-gradient(0deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
-        padding-right: 0px;
-        padding-left: 0px;
+    .card-faq {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .ngbTitleCard{
+        font-size: 13px;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+    }
+
+    .ngbContentCard{
+        font-size: 11px;
     }
 
   }

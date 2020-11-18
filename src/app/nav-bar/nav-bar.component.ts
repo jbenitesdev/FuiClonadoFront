@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+    mobile : boolean;
+
     constructor() { }
 
     ngOnInit() {
+        if (window.screen.width <= 400) { 
+            this.mobile = true;
+            
+        }
+
     }
 
 }

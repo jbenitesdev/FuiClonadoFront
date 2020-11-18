@@ -1,3 +1,14 @@
+.li{
+    padding-top: 10px;
+}
+
+.form-email-contato{
+    padding-top: 20px;
+}
+.btn-success{
+    background-color:#05C0A3;
+}
+
 .default-container {
     padding-right: 0px;
     padding-left: 0px;
@@ -188,6 +199,7 @@ ngb-accordion {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    width:800px;
     height: 80px;
     background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
     border-radius: 64px;
@@ -196,6 +208,7 @@ ngb-accordion {
 
 .link-icon {
     height: 60px;
+    width:60px;
     cursor: pointer;
 }
 
@@ -304,23 +317,36 @@ ngb-accordion {
         color: #3C5768;
     }
 
-    .div-container-links {
-        height: 100px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: -150px;
-    }
-
     .div-links {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-evenly;
+        width:250px;
         height: 40px;
         background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
         border-radius: 64px;
         opacity: 1;
+    }
+
+    .div-container-links {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-main-container-link{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .link-icon {
+        height: 30px;
+        width:30px;
+        cursor: pointer;
     }
 
     .span-contato {
@@ -338,6 +364,26 @@ ngb-accordion {
         display:flex;
         align-items: center;
         justify-content: center;
+    }
+
+  }
+
+  @media only screen and (max-width: 400px) {
+
+
+    .card-faq {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .ngbTitleCard{
+        font-size: 13px;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+    }
+
+    .ngbContentCard{
+        font-size: 11px;
     }
 
   }

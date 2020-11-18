@@ -1,9 +1,9 @@
 <div class="default-container col-12">
     <div>
         <div class="col-12 div-contato">
-            <div class="col-4"></div>
-            <span class="col-md-4 col-xs- span-title">ENTRE EM CONTATO</span>
-            <div class="col-4"></div>
+            <div class="col-md-4 col-xs-2"></div>
+            <div class="col-md-4 col-xs-8 col-sm-8 titcontato"><span class="span-title">ENTRE EM CONTATO</span></div>
+            <div class="col-md-4 col-xs-2"></div>
         </div>
         <div class="col-12 div-retangulo-branco">
             <img class="img-retangulo-branco" src="./assets/img/bg/RetanguloArredondadoBG.png">
@@ -11,8 +11,8 @@
     </div>
     <div class="col-12 div-contato-form">
         <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="div-form-contato">
-            <div class="col-2"></div>
-            <div class="col-8">
+            <div class="col-md-2 col-xs-1"></div>
+            <div class="col-md-8 col-xs-10">
                 <div class="form-group col-12 default-form-group">
                     <label for="nome" class="control-label lbl-form-contato" [class.label-error]="!nome.valid && nome.touched">Nome</label>
                     <input type="text" ngModel name="nome" required #nome="ngModel" class="form-control form-text-box col-12" id="nome" placeholder="Insira seu nome completo">
@@ -34,7 +34,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-2"></div>
+            <div class="col-md-2 col-xs-1"></div>
         </form>
     </div>
     <div class="col-12">
@@ -42,14 +42,14 @@
             <img class="contato-phone-icon" src="./assets/img/icon/PhoneIcon.png">
             <span class="span-links">+55 21 XXXX-XXXX</span>
         </div>
-        <div class="col-12">
+        <div class="col-md-12 col-xs-12 col-sm-12 div-main-container-link">
             <div class="col-12 div-container-links">
                 <div class="col-12 div-links">
-                    <img class="link-icon" src="./assets/img/icon/FacebookIcon.png" height="5px;" width="40px;">
-                    <img class="link-icon" src="./assets/img/icon/InstagramIcon.png" height="5px;" width="40px;">
-                    <img class="link-icon" src="./assets/img/icon/TelIcon.png" height="5px;" width="40px;">
-                    <img class="link-icon" src="./assets/img/icon/MailIcon.png" height="5px;" width="40px;">
-                    <img class="link-icon" src="./assets/img/icon/WhatsAppIcon.png" height="5px;" width="40px;">
+                    <img class="link-icon" src="./assets/img/icon/FacebookIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/InstagramIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/TelIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/MailIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/WhatsAppIcon.png">
                 </div>
             </div>
         </div>

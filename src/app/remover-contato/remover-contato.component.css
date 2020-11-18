@@ -1,3 +1,42 @@
+.div-recnum{
+    display:flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.titlerecnum{
+    display:flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.subtitlerecnum{
+    display:flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.form-group{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.divbtnenviar{
+    display:flex; 
+    align-items: center; 
+    padding-bottom: 50px; 
+    justify-content: center;
+}
+
+.form-email-contato{
+    padding-top: 20px;
+}
+
+.btn-success{
+    background-color:#05C0A3;
+}
+
 .default-container {
     padding-right: 0px;
     padding-left: 0px;
@@ -129,10 +168,6 @@ ngb-accordion {
     border-radius: 20px;
 }
 
-.form-text-box {
-    height: 60px;
-}
-
 .form-textarea-bot {
     height: 150px;
 }
@@ -188,6 +223,7 @@ ngb-accordion {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    width:800px;
     height: 80px;
     background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
     border-radius: 64px;
@@ -196,6 +232,7 @@ ngb-accordion {
 
 .link-icon {
     height: 60px;
+    width:60px;
     cursor: pointer;
 }
 
@@ -289,3 +326,136 @@ ngb-accordion {
     margin-left: 17px;
     margin-bottom: 0px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .div-contato{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height: 250px;
+    }
+
+    .div-retangulo-branco {    
+        padding-left: 0;
+        padding-right: 0;
+        height: 100px;
+        width: 100%;
+        margin-top: -50px;
+    }
+
+    .span-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2em;
+        font-style: italic;
+        padding-right: 0px;
+        padding-left: 0px;
+        color: #FFFFFF;
+        margin-top: -80px;
+    }
+
+
+    .div-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width:250px;
+        height: 40px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        border-radius: 64px;
+        opacity: 1;
+    }
+
+    .span-contato {
+        font-size: 2em;
+        font-weight: 400;
+        color: #3C5768;
+    }
+
+    .div-faq-text {
+        font-size: 1em!important;
+        color: #3C5768!important;
+        padding-top:30px;
+    }
+    .form-email-contato{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .titlerecnum{
+        display:flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top:50px;
+    }
+
+    .subtitlerecnum{
+        padding-top:20px;
+    }
+
+    .form-span-title {
+        color: #3C5768; 
+        font-weight: bold; 
+        font-size: 1rem;
+    }
+
+    .span-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2em;
+        font-style: italic;
+        padding-right: 0px;
+        padding-left: 0px;
+        color: #FFFFFF;
+        margin-top: -80px;
+    }
+
+    .default-form-group {
+        margin-top: 50px;
+    }
+
+    .form-text-box {
+        width: 250px;
+        height: 40px;
+    }
+
+    .div-contato {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 360px;
+        background: transparent linear-gradient(0deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .div-container-links {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-main-container-link{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .link-icon {
+        height: 30px;
+        width:30px;
+        cursor: pointer;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 400px) {
+
+  }

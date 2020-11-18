@@ -2,20 +2,20 @@
     <div>
         <div class="col-12 div-contato">
             
-            <div class="col-12" style="display:flex; align-items: center; justify-content: center;">
+            <div class="col-12 div-recnum">
                 <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="div-form">
-                    <div class="col-12" style="display:flex; align-items: center; justify-content: center;">
+                    <div class="col-md-12 col-xs-12 col-sm-12 titlerecnum">
                     <span class="span-title">RECUPEREI <br>MEU NÚMERO</span>
                     </div>
-                    <div class="col-12" style="display:flex; align-items: center; justify-content: center;">
+                    <div class="col-md-12 col-xs-12 col-sm-12 subtitlerecnum">
                     <span class="form-span-title">INFORME SEU NÚMERO</span>
                     </div>
-                    <div class="form-group" style="display: flex; align-items: center; justify-content: center;">
+                    <div class="col-md-12 col-xs-6 offset-xs-6 form-group">
                         <!-- <input type="text" ngModel name="numero" #numero="ngModel" required [textMask]="{mask: telMask}" class="form-control form-text-box" id="numero" placeholder="Insira seu número com DDD"> -->
                         <input type="text" ngModel name="numero" #numero="ngModel" class="form-control form-text-box" id="numero" placeholder="Insira seu número com DDD">
                         <div class="field-error" *ngIf="!numero.valid && numero.touched">O campo Número é obrigatório</div>
                     </div>
-                    <div style="display:flex; align-items: center; padding-bottom: 50px; justify-content: center;">
+                    <div class="divbtnenviar">
                         <button type="submit" class="btn btn-default btn-enviar">
                             <span class="span-enviar"><b>ENVIAR</b></span>
                         </button>
@@ -32,9 +32,9 @@
         </div>
     </div>
     
-    <div class="col-12">
+    <div class="col-md-12 col-xs-12 col-sm-12 div-main-container-link">
         <div class="col-12 div-container-links">
-            <div class="col-8 div-links">
+            <div class="col-12 div-links">
                 <img class="link-icon" src="./assets/img/icon/FacebookIcon.png">
                 <img class="link-icon" src="./assets/img/icon/InstagramIcon.png">
                 <img class="link-icon" src="./assets/img/icon/TelIcon.png">
@@ -59,11 +59,11 @@
                     <div class="col-2"></div>
                 </div>
             </div>
-            <div class="col-12 div-contato-action">
+            <div class="col-md-12 col-xs-12 col-sm-12 div-contato-action">
             
-                <div class="row col-6" style="padding-top: 20px;">
+                <div class="row col-md-6 form-email-contato">
                     <input type="text" class="form-control form-text-box" placeholder="Insira o email">
-                    <button type="button" class="btn btn-success" style="background-color:#05C0A3;">
+                    <button type="button" class="btn btn-success">
                         <b>ENVIAR EMAIL</b>
                     </button>
                 </div>
@@ -71,39 +71,11 @@
 
         </div>
     </div>
-    <div class="col-12 div-rodape">
+    <div class="col-md-12 col-xs-12 col-sm-12 div-rodape">
         <div class="col-12 div-logo-branco">
             <img class="logo-branco" src="./assets/img/logo/LogoFuiClonadoBranco.png">
         </div>
     </div>
 </div>  
-        <!-- <div class="col-12">
-            <div class="col-12 div-entre-em-contato">
-                <span>ENTRE EM CONTATO</span>
-            </div> -->
-            <!-- <div class="col-12 div-texto-contato">
-                <span class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
-            </div>
-            <div class="col-12 div-controles-contato">
-                <div class="col-4">
-                    <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="div-form-contato">
-                        <div class="form-group col-12 default-form-group">
-                            <input type="email" ngModel email name="email" required #email="ngModel" class="form-control form-text-box col-12" id="email" placeholder="Insira o email">
-                            <div class="field-error" *ngIf="!email.valid && email.touched">O campo Nome é obrigatório</div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-2">
-                    <button type="submit" class="btn btn-default btn-inscrever">
-                        <span class="span-enviar">SE INSCREVA</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 div-rodape">
-        <div class="col-12 div-logo-branco">
-            <img class="logo-branco" src="./assets/img/logo/LogoFuiClonadoBranco.png">
-        </div>
-    </div> -->
+        
 
