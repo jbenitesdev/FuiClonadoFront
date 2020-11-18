@@ -304,4 +304,12 @@
         width:1200px;
     }
 
+    .default-form-group {
+        margin-top: 20px;
+    }
+
+    .logo-branco {
+        width: 300px;
+    }
+
   }

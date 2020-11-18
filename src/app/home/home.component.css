@@ -2,11 +2,19 @@
     padding-top: 10px;
 }
 
+/* .form-email-contato{
+    padding-top: 20px;
+} */
+
 .form-email-contato{
     padding-top: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-success{
+    height:48px;
     background-color:#05C0A3;
 }
 
@@ -34,7 +42,7 @@
 .div-formulario {
     display: flex;
     flex-direction: row;
-    height: 1075px;
+    height: 1000px;
     background: transparent linear-gradient(0deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
     padding-right: 0px;
     padding-left: 0px;
@@ -140,13 +148,18 @@
 
 .div-form { 
     width: 500px;
-    height: 850px;
+    height: 750px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 20px #00000033;
     display: flex;
     flex-direction: column;
     align-items: center;
     opacity: 1;
+}
+
+.ngbTitleCard{
+    word-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 .form-span-title {
@@ -379,6 +392,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 120px;
+    text-align:center;
 }
 
 .span-title-estatisticas {
@@ -618,7 +632,7 @@ ngb-accordion title{
 } 
 
 .div-main-container-link{
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .card-ajudar-icon{
@@ -676,7 +690,7 @@ ngb-accordion title{
     .div-formulario {
         display: flex;
         flex-direction: row;
-        height: 800px;
+        height: 750px;
         background: transparent linear-gradient(0deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
         padding-right: 0px;
         padding-left: 0px;
@@ -730,7 +744,7 @@ ngb-accordion title{
 
     .div-form { 
         width: 354px;
-        height: 624px;
+        height: 560px;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 0px 20px #00000033;
         display: flex;
@@ -767,10 +781,22 @@ ngb-accordion title{
         border-radius: 20px;
     }
 
+    .div-card-ajudar-first {
+        display: block;
+    }
+
+    .div-card-ajudar-second {
+        display: block;
+    }
+
+    .div-card-ajudar-third {
+        display: block;
+    }
+
     .btn-card-first {
         width: 120px;
         height: 40px;
-        margin-top: 140px;
+        margin-top: 70px;
         background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
         mix-blend-mode: multiply;
         border-radius: 10px;
@@ -801,29 +827,6 @@ ngb-accordion title{
     }
     
 
-    .div-card-ajudar-first {
-        display: flex;
-        flex-direction: row;
-        padding-left: 5px;
-        padding-right:5px;
-    }
-    
-    .div-card-ajudar-second {
-        display: flex;
-        flex-direction: row;
-        margin-top: 50px;
-        padding-left: 5px;
-        padding-right:5px;
-    }
-    
-    .div-card-ajudar-third {
-        display: flex;
-        flex-direction: row;
-        margin-top: 100px;
-        padding-left: 5px;
-        padding-right:5px;
-    }
-
     .container-card-ajudar{
         padding-left: 5px;
         padding-right:5px;
@@ -834,7 +837,7 @@ ngb-accordion title{
         opacity: 1;
         box-shadow: 0px 0px 20px #00000033;
         color: #3C5768;
-        height:auto; 
+        height:1440px; 
         padding-bottom: 30px;
     }
     
@@ -908,6 +911,7 @@ ngb-accordion title{
         text-align: center;
     }
 
+
     .card-estatisticas-first {
         height: 110px!important;
         background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -943,6 +947,12 @@ ngb-accordion title{
         padding-right: 0px;
     }
 
+    .span-contato {
+        font-size: 3em;
+        font-weight: 400;
+        color: #3C5768;
+    }
+
     .div-links {
         display: flex;
         flex-direction: row;
@@ -967,6 +977,7 @@ ngb-accordion title{
         display: flex; 
         align-items: center; 
         justify-content: center;
+        padding-top: 100px;
     }
     .link-icon {
         height: 30px;
@@ -1210,6 +1221,34 @@ ngb-accordion title{
         text-align: center;
     }
 
+    .card-estatisticas-first {
+        height: 90px!important;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        box-shadow: 0px 0px 20px #00000033;
+        color: #3C5768;
+    }
+    
+    .card-estatisticas-second {
+        height: 90px!important;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        box-shadow: 0px 0px 20px #00000033;
+        color: #3C5768;
+    }
+    
+    .card-estatisticas-third {
+        height: 90px!important;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        box-shadow: 0px 0px 20px #00000033;
+        color: #3C5768;
+    }
+    
+    .card-estatisticas-fourth {
+        height: 110px!important;
+    }
+
 
     .div-links {
         display: flex;
@@ -1254,6 +1293,7 @@ ngb-accordion title{
         font-size: 1em!important;
         color: #3C5768!important;
         padding-top:30px;
+        width:200px;
     }
     .form-email-contato{
         display:flex;
@@ -1317,6 +1357,10 @@ ngb-accordion title{
 
     .ngbContentCard{
         font-size: 11px;
+    }
+
+    .logo-branco {
+        width: 300px;
     }
 
   }

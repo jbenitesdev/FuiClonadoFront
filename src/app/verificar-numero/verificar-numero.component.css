@@ -423,7 +423,7 @@ ngb-accordion title{
 } 
 
 .div-main-container-link{
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .divrecupereinum{
@@ -431,6 +431,11 @@ ngb-accordion title{
     align-items:center; 
     justify-content:center;
     padding-top: 10px;
+}
+
+.ngbTitleCard{
+    word-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 @media only screen and (max-width: 768px) {
@@ -596,6 +601,17 @@ ngb-accordion title{
         font-size: 24px;
         font-weight: 700;
         font-family: "Roboto", sans-serif;
+    }
+
+    .div-faq-text {
+        font-size: 1em!important;
+        color: #3C5768!important;
+        padding-top:30px;
+        width:200px;
+    }
+
+    .logo-branco {
+        width: 300px;
     }
 
   }

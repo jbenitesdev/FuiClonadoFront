@@ -108,8 +108,9 @@ ngb-accordion {
 }
 
 .span-enviar {
+    font-weight: bold;
     font-size: 2em;
-    color: #FFFFFF;
+    color: white;
 }
 
 .img-retangulo-branco {
@@ -312,7 +313,6 @@ ngb-accordion {
     height: 60px;
     margin-top: 10px;
     background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
-    mix-blend-mode: multiply;
     border-radius: 20px;
 }
 
@@ -453,9 +453,12 @@ ngb-accordion {
         cursor: pointer;
     }
 
-
   }
 
   @media only screen and (max-width: 400px) {
+
+    .logo-branco {
+        width: 300px;
+    }
 
   }
