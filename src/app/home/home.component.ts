@@ -32,14 +32,13 @@ export class HomeComponent implements OnInit {
   }
 
   onSubmit(form) {
-    if (form.status !== 'INVALID' && validate(form.controls.cpf.value)) {
+    if (form.status !== 'INVALID') {
       const numero = this.tratarNumero(form.controls.numero.value);
 
       this.numerosClonadosService.verificarUsuario(numero, window.location.href).subscribe(res => {
         if (res.status === 200) {
           this.storeService.registroUsuario = {
             nome : form.controls.nome.value,
-            cpf: form.controls.cpf.value,
             numero: form.controls.numero.value,
             email: form.controls.email.value,
             termo: form.controls.termo.value
