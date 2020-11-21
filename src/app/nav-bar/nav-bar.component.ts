@@ -6,17 +6,13 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-
-    mobile : boolean;
+    mobile: boolean;
 
     constructor() { }
 
     ngOnInit() {
-        if (window.screen.width <= 400) { 
+        if (window.screen.width <= 400) {
             this.mobile = true;
-            
         }
-
     }
-
 }

@@ -1,36 +1,36 @@
 
 .fa-align-justify{
-  color:#1ABC9C;
+    color:#1ABC9C;
 }
 
 .dropdown-item.active, .dropdown-item:active{
-background-color:#1ABC9C ;
+    background-color:#1ABC9C ;
 } 
 
 .dropdown-item.active, .dropdown-item:hover {
-  background-color:#1ABC9C ;
-  }  
+    background-color:#1ABC9C ;
+}  
 
 .dropdown-menu{
-  width:371px;
-  left:-269px;
-  opacity:0;
--webkit-animation: fadeIn 0.5s ease-in-out;
--moz-animation: fadeIn 0.5s ease-in-out;
--o-animation: fadeIn 0.5s ease-in-out;
-animation: fadeIn 0.5s ease-in-out; 
--webkit-animation-fill-mode:forwards;
--moz-animation-fill-mode:forwards;
--o-animation-fill-mode:forwards;
-animation-fill-mode:forwards;
+    width:371px;
+    left:-269px;
+    opacity:0;
+    -webkit-animation: fadeIn 0.5s ease-in-out;
+    -moz-animation: fadeIn 0.5s ease-in-out;
+    -o-animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out; 
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
 }
 
 
 .dropdown-menu-delay{	
--webkit-animation-delay:0.5s;
--moz-animation-delay:0.5s;
--o-animation-delay:0.5s;
-animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+    -moz-animation-delay:0.5s;
+    -o-animation-delay:0.5s;
+    animation-delay:0.5s;
 }
 
 
@@ -57,8 +57,8 @@ animation-delay:0.5s;
 }
 
 .iconbarrasuperior{
-height:60px; 
-width:60px;
+    height:60px; 
+    width:60px;
 }
 
 .div-menu {
@@ -99,20 +99,19 @@ width:60px;
 button:hover, button:focus {
     border: none;
     outline: none;
-  }
+}
 
-  @media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 768px) {
     .logo{
         width: 200px;
         height: 72px;
     }
-    
+  
     .default-container {
         margin-right: 1px;
         margin-left: 1px;
     }
-    
+  
     .default-menu-item {
         font-weight: bold;
         font-size: 1rem;
@@ -148,14 +147,9 @@ button:hover, button:focus {
     .div-menubar-button{
         padding-right: 10px;
     }
-
-
-  }
+}
   
-  @media only screen and (max-width: 400px) {
-
-    
+@media only screen and (max-width: 400px) {
   
-  }
 
-
+}

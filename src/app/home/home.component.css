@@ -696,12 +696,19 @@ ngb-accordion title{
         padding-left: 0px;
     }
 
+    .div-circle-arrow-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: -12%;
+    }
+
     .span-preencha-formulario {
         position: absolute;
         color: #FFFFFF;
         font-weight: 500;
         font-size: 21px;
-        margin-left: 20%;
     }
 
     .div-formulario-esquerdo {
@@ -721,6 +728,12 @@ ngb-accordion title{
         display: flex;
         padding-top: 6%;
         text-align: left;
+        padding-left: 8px!important;
+    }
+
+    .div-formulario-direito-container {
+        padding-left: 0px!important;
+        padding-right: 0px!important;
     }
 
     .control-label{
@@ -995,6 +1008,9 @@ ngb-accordion title{
         font-size: 11px;
     }
 
+    .btn-success {
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1371,4 +1387,4 @@ ngb-accordion title{
         width: 300px;
     }
 
-  }
+}

@@ -556,6 +556,9 @@ ngb-accordion title{
         cursor: pointer;
     }
 
+    .btn-success {
+        margin-top: 20px;
+    } 
   }
 
   @media only screen and (max-width: 400px) {

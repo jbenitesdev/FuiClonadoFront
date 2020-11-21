@@ -93,6 +93,7 @@ ngb-accordion {
     flex-direction: row;
     align-items: center;
     margin-top: -50px;
+    justify-content: center;
 }
 
 .default-form-group {
@@ -311,6 +312,12 @@ ngb-accordion {
         padding-top: -200px;
     }
 
+    .div-perguntas-populares {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
     .span-perguntas-populares {
         font-size: 2em;
         font-weight: 400;
@@ -366,6 +373,9 @@ ngb-accordion {
         justify-content: center;
     }
 
+    .btn-success {
+        margin-top: 20px;
+    }
   }
 
   @media only screen and (max-width: 400px) {
