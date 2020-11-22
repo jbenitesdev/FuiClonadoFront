@@ -11,6 +11,7 @@ import { ModalMessageComponent } from '../modal-message/modal-message.component'
 })
 
 export class ContatoWppComponent implements OnInit {
+    mobile: boolean;
     modalRef: BsModalRef;
     modalConfig: ModalOptions = { class: 'modal-sm modal-dialog-centered' };
 
@@ -21,6 +22,10 @@ export class ContatoWppComponent implements OnInit {
                 private storeService: StoreService) { }
 
     ngOnInit() {
+        if (window.screen.width <= 400) {
+            this.mobile = true;
+        }
+
         this.getAccessToken();
     }
 

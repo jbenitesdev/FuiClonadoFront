@@ -136,8 +136,8 @@
 }
 
 .form-text-box {
-    height: 60px;
-    width:400px;
+    width: 390px;
+    height: 50px;
 }
 
 .span-contato {
@@ -198,4 +198,74 @@
 .logo-branco {
     margin-top: 100px;
     margin-bottom: 80px;
+}
+
+.form-email-contato{
+    padding-top: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-success{
+    height:48px;
+    background-color:#05C0A3;
+}
+
+@media only screen and (max-width: 768px){
+    .div-main-container-links{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top: 100px;
+    }
+    .div-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width:250px;
+        height: 40px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        border-radius: 64px;
+        opacity: 1;
+    }
+    
+    .link-icon {
+        height: 30px;
+        width:30px;
+        cursor: pointer;
+    }
+
+    .span-contato {
+        font-size: 2em;
+        font-weight: 400;
+        color: #3C5768;
+    }
+
+    .div-faq-text {
+        font-size: 1em!important;
+        color: #3C5768!important;
+        padding-top:30px;
+        width:200px;
+    }
+    
+    .form-email-contato{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-text-box {
+        width: 240px;
+        height: 50px;
+    }
+
+    .btn-success {
+        margin-top: 20px;
+    }
+
+    .logo-branco {
+        width: 300px;
+    }
 }

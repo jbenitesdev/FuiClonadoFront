@@ -1,9 +1,6 @@
-<!-- <div class="col-12">
-    <button type="button" class="btn btn-primary" (click)="openGoogleApi()">CONTATOS GOOGLE</button>
-</div> -->
 <div *ngIf="isValid" class="notificar-contatos-container col-12">
     <img class="card-icon" src="./assets/img/icon/SuccessIcon2.png">
-    <div class="col-4 card notificar-contatos-card">
+    <div [class.col-4]="!mobile" [class.col-10]="mobile" class="card notificar-contatos-card">
         <div class="card-body">
             <div class="card-body-container">
                 <div class="card-status-message success-msg"><strong>Autorização realizada com sucesso!</strong></div>
@@ -16,7 +13,7 @@
 </div>
 <div *ngIf="!isValid" class="notificar-contatos-container col-12">
     <img class="card-icon" src="./assets/img/icon/ErrorIcon.png">
-    <div class="col-4 card notificar-contatos-card">
+    <div [class.col-4]="!mobile" [class.col-10]="mobile" class="card notificar-contatos-card">
         <div class="card-body">
             <div class="card-body-container">
                 <div class="card-status-message error-msg"><strong>Erro ao realizar cadastro!</strong></div>
@@ -27,9 +24,9 @@
         </div>
     </div>
 </div>
-<div class="col-12">
+<div class="col-md-12 col-xs-12 col-sm-12">
     <div class="col-12 div-container-links">
-        <div class="col-8 div-links">
+        <div class="col-md-8 col-xs-12 col-sm-12 div-links">
             <img class="link-icon" src="./assets/img/icon/FacebookIcon.png">
             <img class="link-icon" src="./assets/img/icon/InstagramIcon.png">
             <img class="link-icon" src="./assets/img/icon/TelIcon.png">
@@ -48,18 +45,15 @@
                 </div>
             </div>
             <div class="col-12 div-contato-text-container">
-                <div class="col-2"></div>
-                <div class="col-8 div-faq-text">
+                <div class="col-md-8 col-xs-10 col-sm-8 div-faq-text">
                     <span>Envie abaixo seu e-mail e entraremos em contato.</span>
                 </div>
-                <div class="col-2"></div>
             </div>
         </div>
         <div class="col-12 div-contato-action">
-        
-            <div class="row col-6" style="padding-top: 20px;">
+            <div class="row col-md-6 col-xs-6 col-sm-8 form-email-contato">
                 <input type="text" class="form-control form-text-box" placeholder="Insira o email">
-                <button type="button" class="btn btn-success" style="background-color:#05C0A3;">
+                <button type="button" class="btn btn-success">
                     <b>ENVIAR EMAIL</b>
                 </button>
             </div>
@@ -72,34 +66,3 @@
         <img class="logo-branco" src="./assets/img/logo/LogoFuiClonadoBranco.png">
     </div>
 </div>
-
-
-    <!-- <div class="col-12">
-        <div class="col-12 div-entre-em-contato">
-            <span>ENTRE EM CONTATO</span>
-        </div>
-        <div class="col-12 div-texto-contato">
-            <span class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
-        </div>
-        <div class="col-12 div-controles-contato">
-            <div class="col-4">
-                <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="div-form-contato">
-                    <div class="form-group col-12 default-form-group">
-                        <input type="email" ngModel email name="email" required #email="ngModel" class="form-control form-text-box col-12" id="email" placeholder="Insira o email">
-                        <div class="field-error" *ngIf="!email.valid && email.touched">O campo Nome é obrigatório</div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-2">
-                <button type="submit" class="btn btn-default btn-inscrever">
-                    <span class="span-enviar">SE INSCREVA</span>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-12 div-rodape">
-    <div class="col-12 div-logo-branco">
-        <img class="logo-branco" src="./assets/img/logo/LogoFuiClonadoBranco.png">
-    </div>
-</div> -->
