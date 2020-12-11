@@ -658,7 +658,7 @@ ngb-accordion title{
 }
 
 
-@media only screen and (max-width: 768px){
+/* @media only screen and (max-width: 768px){
   
     .div-title-a {
         display: flex;
@@ -1010,9 +1010,9 @@ ngb-accordion title{
     .btn-success {
         margin-top: 20px;
     }
-}
+} */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
     /* For mobile phones: */
 
     .div-formulario {
