@@ -88,8 +88,9 @@ export class ContatoWppComponent implements OnInit {
                 if (contato.hasOwnProperty('gd:phoneNumber')) {
                     let contatoObj = { nome: contato.title[0]._, telefones: [] }
                     let numeros = Object.entries(contato)
+                    let teste = contato['gd:phoneNumber']
                     
-                    contatoObj.telefones = numeros
+                    contatoObj.telefones = teste
                     telefonesContatos.push(contatoObj)
                 }
             });
