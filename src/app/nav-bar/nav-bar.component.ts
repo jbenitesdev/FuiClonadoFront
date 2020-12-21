@@ -11,7 +11,7 @@ export class NavBarComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
-        if (window.screen.width <= 400) {
+        if (window.screen.width <= 768) {
             this.mobile = true;
         }
     }

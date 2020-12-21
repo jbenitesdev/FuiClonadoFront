@@ -438,10 +438,7 @@ ngb-accordion title{
     white-space: pre-wrap;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-
-
+/* @media only screen and (max-width: 768px) {
     .div-container-links {
         height: 100px;
         display: flex;
@@ -559,9 +556,9 @@ ngb-accordion title{
     .btn-success {
         margin-top: 20px;
     } 
-  }
+  } */
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 400px) and (max-width: 768px) {
 
     .contianer-info {
         position: absolute;

@@ -72,12 +72,30 @@ export class ContatoWppComponent implements OnInit {
 
         this.numerosClonadosService.getContatosGoogle(scope, bearer, accessToken).subscribe(respCon => {
             console.log('RESPONSE DOS CONTATOS: ', respCon.data);
-
+            this.obetNumerosPorContato(respCon.data)
             // respCon.map(entry => {
             //     console.log("VALOR DE UMA PROP: ", entry['prop'])
             // })
             
         });
+    }
+
+    obetNumerosPorContato(contatos: any[]) {
+        let telefonesContatos = []
+
+        if (contatos && contatos.length > 0) {
+            contatos.forEach(contato => {
+                if (contato.hasOwnProperty('gd:phoneNumber')) {
+                    let contatoObj = { nome: contato.title[0]._, telefones: [] }
+                    let numeros = Object.entries(contato)
+                    
+                    contatoObj.telefones = numeros
+                    telefonesContatos.push(contatoObj)
+                }
+            });
+        }
+
+        console.log('VALOR DE TELEFONES: ', telefonesContatos)
     }
 
     onSubmit(form) {
