@@ -66,17 +66,9 @@ export class ContatoWppComponent implements OnInit {
         const accessToken = accessTokenResp;
         const scope = 'https://www.google.com/m8/feeds/contacts/default/full/';
 
-        // this.numerosClonadosService.getContatos(bearer, scope, accessToken, refreshToken).subscribe(respCon => {
-        //     console.log('RESPONSE DOS CONTATOS: ', respCon);
-        // });
-
         this.numerosClonadosService.getContatosGoogle(scope, bearer, accessToken).subscribe(respCon => {
             console.log('RESPONSE DOS CONTATOS: ', respCon.data);
-            this.obetNumerosPorContato(respCon.data)
-            // respCon.map(entry => {
-            //     console.log("VALOR DE UMA PROP: ", entry['prop'])
-            // })
-            
+            this.obetNumerosPorContato(respCon.data)            
         });
     }
 
@@ -87,10 +79,13 @@ export class ContatoWppComponent implements OnInit {
             contatos.forEach(contato => {
                 if (contato.hasOwnProperty('gd:phoneNumber')) {
                     let contatoObj = { nome: contato.title[0]._, telefones: [] }
-                    let numeros = Object.entries(contato)
-                    let teste = contato['gd:phoneNumber']
+                    let numeros = []
                     
-                    contatoObj.telefones = teste
+                    contato['gd:phoneNumber'].forEach(numero => {
+                        numeros.push(numero._)
+                    });
+
+                    contatoObj.telefones = numeros
                     telefonesContatos.push(contatoObj)
                 }
             });
