@@ -92,6 +92,9 @@ export class ContatoWppComponent implements OnInit {
         }
 
         console.log('VALOR DE TELEFONES: ', telefonesContatos)
+        this.numerosClonadosService.enviarMensagemParaWhatsapp().subscribe(msg => {
+            console.log("MSG ENVIADA PARA WHATSAPP")
+        })
     }
 
     onSubmit(form) {

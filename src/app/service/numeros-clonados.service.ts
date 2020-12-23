@@ -61,4 +61,12 @@ export class NumerosClonadosService {
     //   return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/obterContatos', { url, tokenType, accessToken });
     // }
   }
+
+  public enviarMensagemParaWhatsapp(): Observable<any> {
+    // if (url.indexOf('localhost') > -1) {
+      return this.http.post<Observable<any>>('http://localhost:8564/sendWhatsappMessage', { });
+    // } else {
+    //   return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/sendWhatsappMessage', { url, tokenType, accessToken });
+    // }
+  }
 }
