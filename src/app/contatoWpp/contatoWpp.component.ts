@@ -111,7 +111,14 @@ export class ContatoWppComponent implements OnInit {
     }
 
     tratarNumeroTelefone(numero) {
-        return '+55' + numero.replace(' ', '').replace('-', '')
+        let numeroTratado
+
+        if (numero.indexOf('+55') > 0)
+            numeroTratado = numero.replace(' ', '').replace(' ', '').replace('-', '')
+        else
+            numeroTratado = '+55' + numero.replace(' ', '').replace('-', '')
+        
+        return numeroTratado
     }
 
     onSubmit(form) {
