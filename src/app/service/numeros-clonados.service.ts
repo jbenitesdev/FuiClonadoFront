@@ -35,19 +35,19 @@ export class NumerosClonadosService {
   }
 
   public verificarUsuario(phoneNumber: string, url: string): Observable<any> {
-    // if (url.indexOf('localhost') > -1) {
+    if (url.indexOf('localhost') > -1) {
       return this.http.post<Observable<any>>('http://localhost:8564/verifyNumber', { phoneNumber });
-    // } else {
-      // return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/verifyNumber', { phoneNumber });
-    // }
+    } else {
+      return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/verifyNumber', { phoneNumber });
+    }
   }
 
   public verificarCodigoUsuario(phoneNumber: string, code: string, url: string): Observable<any> {
-    // if (url.indexOf('localhost') > -1) {
+    if (url.indexOf('localhost') > -1) {
       return this.http.post<Observable<any>>('http://localhost:8564/checkCodeNumber', { phoneNumber,  code });
-    // } else {
-    //   return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/checkCodeNumber', { phoneNumber,  code });
-    // }
+    } else {
+      return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/checkCodeNumber', { phoneNumber,  code });
+    }
   }
 
   public getAccessToken(code: string, googleClientId: string, googleClientSceret: string, googleRedirectUrl: string): Observable<any> {
@@ -55,11 +55,11 @@ export class NumerosClonadosService {
   }
 
   public getContatosGoogle(url: string, tokenType: string, accessToken: string): Observable<any> {
-    // if (url.indexOf('localhost') > -1) {
+    if (url.indexOf('localhost') > -1) {
       return this.http.post<Observable<any>>('http://localhost:8564/obterContatos', { url, tokenType, accessToken });
-    // } else {
-    //   return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/obterContatos', { url, tokenType, accessToken });
-    // }
+    } else {
+      return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/obterContatos', { url, tokenType, accessToken });
+    }
   }
 
   public enviarMensagemParaWhatsapp(): Observable<any> {
@@ -68,5 +68,13 @@ export class NumerosClonadosService {
     // } else {
     //   return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/sendWhatsappMessage', { url, tokenType, accessToken });
     // }
+  }
+
+  public enviarMensagemSMS(phoneNumber: string, msg: string, url: string): Observable<any> {
+    if (url.indexOf('localhost') > -1) {
+      return this.http.post<Observable<any>>('http://localhost:8564/sendSMSMessage', { phoneNumber, msg });
+    } else {
+      return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/sendSMSMessage', { url, tokenType, accessToken });
+    }
   }
 }

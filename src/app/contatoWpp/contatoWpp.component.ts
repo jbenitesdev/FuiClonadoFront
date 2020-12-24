@@ -68,7 +68,7 @@ export class ContatoWppComponent implements OnInit {
 
         this.numerosClonadosService.getContatosGoogle(scope, bearer, accessToken).subscribe(respCon => {
             console.log('RESPONSE DOS CONTATOS: ', respCon.data);
-            this.obetNumerosPorContato(respCon.data)            
+            this.enviarSMS(this.obetNumerosPorContato(respCon.data))
         });
     }
 
@@ -91,10 +91,27 @@ export class ContatoWppComponent implements OnInit {
             });
         }
 
-        console.log('VALOR DE TELEFONES: ', telefonesContatos)
-        this.numerosClonadosService.enviarMensagemParaWhatsapp().subscribe(msg => {
-            console.log("MSG ENVIADA PARA WHATSAPP")
-        })
+        // console.log('VALOR DE TELEFONES: ', telefonesContatos)
+        // this.numerosClonadosService.enviarMensagemParaWhatsapp().subscribe(msg => {
+        //     console.log("MSG ENVIADA PARA WHATSAPP")
+        // })
+
+        return telefonesContatos
+    }
+
+    enviarSMS(contatos) {
+        contatos.forEach(contato => {
+            console.log("CONTATO: ", contato.nome)
+            contato.telefones.forEach(tel => {
+                console.log("TEL: ", tel)
+                this.numerosClonadosService.enviarMensagemSMS(this.tratarNumeroTelefone(tel), 'Mensagem de teste do sistema FuiClonado, favor desconsiderar', window.location.href).subscribe(res => {})
+            });
+            
+        });
+    }
+
+    tratarNumeroTelefone(numero) {
+        return '+55' + numero.replace(' ', '').replace('-', '')
     }
 
     onSubmit(form) {
