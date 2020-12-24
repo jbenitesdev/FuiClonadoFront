@@ -74,7 +74,7 @@ export class NumerosClonadosService {
     if (url.indexOf('localhost') > -1) {
       return this.http.post<Observable<any>>('http://localhost:8564/sendSMSMessage', { phoneNumber, msg });
     } else {
-      return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/sendSMSMessage', { url, tokenType, accessToken });
+      return this.http.post<Observable<any>>('https://fuiclonadoapi.herokuapp.com/sendSMSMessage', { phoneNumber, msg });
     }
   }
 }
