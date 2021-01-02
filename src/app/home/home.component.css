@@ -1017,7 +1017,7 @@ ngb-accordion title{
 
     .div-formulario {
         display: block;
-        height: 1100px;
+        height: auto;
         background: transparent linear-gradient(0deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
     }
 
@@ -1089,7 +1089,8 @@ ngb-accordion title{
 
     .div-form { 
         width: 345px;
-        height: 550px;
+        height: 710px; 
+        margin-bottom: 30px;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 0px 20px #00000033;
         display: flex;
@@ -1097,6 +1098,11 @@ ngb-accordion title{
         align-items: center;
         margin-left:0px;
         opacity: 1;
+    }
+
+    .form-text-box {
+        width: 300px;
+        height: 50px;
     }
 
     .span-title-ajudar {
@@ -1184,8 +1190,8 @@ ngb-accordion title{
     }
 
     .btn-card-first {
-        width: 120px;
-        height: 40px;
+        width: 175px;
+        height: 60px;
         margin-top: 25px;
         background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
         mix-blend-mode: multiply;
@@ -1193,8 +1199,8 @@ ngb-accordion title{
     }
 
     .btn-card-second {
-        width: 120px;
-        height: 40px;
+        width: 175px;
+        height: 60px;
         margin-top: 25px;
         background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
         mix-blend-mode: multiply;
@@ -1202,8 +1208,8 @@ ngb-accordion title{
     }
 
     .btn-card-third {
-        width: 120px;
-        height: 40px;
+        width: 175px;
+        height: 60px;
         margin-top: 25px;
         background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
         mix-blend-mode: multiply;
@@ -1245,7 +1251,7 @@ ngb-accordion title{
     }
 
     .card-estatisticas-first {
-        height: 90px!important;
+        height: 205px!important;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         opacity: 1;
         box-shadow: 0px 0px 20px #00000033;
@@ -1253,7 +1259,7 @@ ngb-accordion title{
     }
     
     .card-estatisticas-second {
-        height: 90px!important;
+        height: 205px!important;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         opacity: 1;
         box-shadow: 0px 0px 20px #00000033;
@@ -1261,7 +1267,7 @@ ngb-accordion title{
     }
     
     .card-estatisticas-third {
-        height: 90px!important;
+        height: 205px!important;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         opacity: 1;
         box-shadow: 0px 0px 20px #00000033;
@@ -1269,7 +1275,7 @@ ngb-accordion title{
     }
     
     .card-estatisticas-fourth {
-        height: 110px!important;
+        height: 240px!important;
     }
 
 
@@ -1278,8 +1284,8 @@ ngb-accordion title{
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        width:250px;
-        height: 40px;
+        width: 335px;
+        height: 50px;
         background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
         border-radius: 64px;
         opacity: 1;
@@ -1316,7 +1322,7 @@ ngb-accordion title{
         font-size: 1em!important;
         color: #3C5768!important;
         padding-top:30px;
-        width:200px;
+        width:225px;
     }
     .form-email-contato{
         display:flex;
@@ -1364,7 +1370,6 @@ ngb-accordion title{
         justify-content: center;
         padding-top: 30px;
         width: 400px;
-        margin-left: -40px;
     }
 
     .card-faq {
@@ -1386,4 +1391,7 @@ ngb-accordion title{
         width: 300px;
     }
 
+    .btn-success {
+        margin-top: 20px;
+    }
 }
