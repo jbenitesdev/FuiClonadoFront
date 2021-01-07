@@ -1,9 +1,9 @@
 <div class="default-container col-12">
     <div>
         <div class="col-12 div-contato">
-            <div class="col-md-4 col-xs-2"></div>
-            <div class="col-md-4 col-xs-8 col-sm-8 titcontato"><span class="span-title">ENTRE EM CONTATO</span></div>
-            <div class="col-md-4 col-xs-2"></div>
+            <div class="col-md-4 col-xs-12 col-sm-12"></div>
+            <div class="col-md-4 col-xs-12 col-sm-12 titcontato"><span class="span-title">ENTRE EM CONTATO</span></div>
+            <div class="col-md-4 col-xs-12 col-sm-12"></div>
         </div>
         <div class="col-12 div-retangulo-branco">
             <img class="img-retangulo-branco" src="./assets/img/bg/RetanguloArredondadoBG.png">
@@ -12,7 +12,7 @@
     <div class="col-12 div-contato-form">
         <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="div-form-contato">
             <div class="col-md-2 col-xs-1"></div>
-            <div class="col-md-8 col-xs-10">
+            <div class="col-10 col-md-8 col-xs-10">
                 <div class="form-group col-12 default-form-group">
                     <label for="nome" class="control-label lbl-form-contato" [class.label-error]="!nome.valid && nome.touched">Nome</label>
                     <input type="text" ngModel name="nome" required #nome="ngModel" class="form-control form-text-box col-12" id="nome" placeholder="Insira seu nome completo">

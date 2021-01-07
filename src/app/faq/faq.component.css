@@ -329,8 +329,8 @@ ngb-accordion {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        width:250px;
-        height: 40px;
+        width: 335px;
+        height: 50px;
         background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
         border-radius: 64px;
         opacity: 1;
@@ -378,7 +378,7 @@ ngb-accordion {
     }
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 768px) {
 
 
     .card-faq {
@@ -400,4 +400,58 @@ ngb-accordion {
         width: 300px;
     }
 
+    .div-perguntas-populares {
+        margin-bottom: 20px;
+    }
+
+    .div-container-links {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-main-container-link{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    .link-icon {
+        height: 30px;
+        width:30px;
+        cursor: pointer;
+    }
+
+    .span-contato {
+        font-size: 2em;
+        font-weight: 400;
+        color: #3C5768;
+    }
+
+    .div-faq-text {
+        font-size: 1em!important;
+        color: #3C5768!important;
+        padding-top:30px;
+        width:225px;
+    }
+    
+    .form-email-contato{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-text-box {
+        width: 275px;
+        height: 50px;
+    }
+
+    .btn-success {
+        margin-top: 20px;
+        height:48px;
+        background-color:#05C0A3;
+    }
   }

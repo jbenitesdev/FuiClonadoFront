@@ -65,7 +65,7 @@
 }
 
 
-.container-card-estatisticas {
+.container-card-faq {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
@@ -438,127 +438,7 @@ ngb-accordion title{
     white-space: pre-wrap;
 }
 
-/* @media only screen and (max-width: 768px) {
-    .div-container-links {
-        height: 100px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: -150px;
-    }
-
-    .span-contato {
-        font-size: 2em;
-        font-weight: 400;
-        color: #3C5768;
-    }
-
-    .div-faq-text {
-        font-size: 1em!important;
-        color: #3C5768!important;
-        padding-top:30px;
-    }
-    .form-email-contato{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contianer-info {
-        position: absolute;
-        z-index: 999;
-        top: -3%;
-    }
-    
-    .div-verificar-title {
-        padding-top:6%;
-        text-align: center;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-        font-size: 3em;
-        font-weight: 300;
-    }
-
-    .default-container {
-        padding-right: 0px;
-        padding-left: 0px;
-        height:400px;
-    }
-    .div-card-faq {
-        display: flex;
-        justify-content: center;
-    }
-
-    .divrecupereinum{
-        display:flex; 
-        align-items:center; 
-        justify-content:center;
-    }
-
-    .recupereinum:link, a:visited {
-        color: (internal value);
-        text-decoration: underline;
-        cursor: pointer;
-      }
-      
-      .recupereinum:link:active, a:visited:active {
-        color: (internal value);
-      }
-    
-    .recupereinum{
-        color: black;
-    }
-
-    .ngbTitleCard{
-        font-size: 13px;
-        word-wrap: break-word;
-        white-space: pre-wrap;
-    }
-
-    .ngbContentCard{
-        font-size: 11px;
-    }
-
-    .div-links {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        width:250px;
-        height: 40px;
-        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
-        border-radius: 64px;
-        opacity: 1;
-    }
-
-    .div-container-links {
-        height: 80px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .div-main-container-link{
-        display: flex; 
-        align-items: center; 
-        justify-content: center;
-    }
-
-    .link-icon {
-        height: 30px;
-        width:30px;
-        cursor: pointer;
-    }
-
-    .btn-success {
-        margin-top: 20px;
-    } 
-  } */
-
-  @media only screen and (max-width: 400px) and (max-width: 768px) {
+  /* @media only screen and (max-width: 400px) and (max-width: 768px) {
 
     .contianer-info {
         position: absolute;
@@ -614,4 +494,148 @@ ngb-accordion title{
         width: 300px;
     }
 
+  } */
+
+  @media only screen and (max-width: 768px) {
+    .div-container-links {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: -150px;
+    }
+
+    .span-contato {
+        font-size: 2em;
+        font-weight: 400;
+        color: #3C5768;
+    }
+
+    .div-faq-text {
+        font-size: 1em!important;
+        color: #3C5768!important;
+        padding-top:30px;
+        width:225px;
+    }
+
+    .form-email-contato{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contianer-info {
+        position: absolute;
+        z-index: 999;
+        top: -3%;
+    }
+    
+    .div-verificar-title {
+        padding-top:11%;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        font-size: 1.5em;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .default-container {
+        padding-right: 0px;
+        padding-left: 0px;
+        height:400px;
+    }
+
+    .div-card-faq {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        width: 400px;
+    }
+
+    .card-faq {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .divrecupereinum{
+        display:flex; 
+        align-items:center; 
+        justify-content:center;
+    }
+
+    .recupereinum:link, a:visited {
+        color: (internal value);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+      
+    .recupereinum:link:active, a:visited:active {
+      color: (internal value);
+    }
+    
+    .recupereinum{
+        color: white;
+    }
+
+    .ngbTitleCard{
+        font-size: 13px;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+    }
+
+    .ngbContentCard{
+        font-size: 11px;
+    }
+
+    .container-card-faq {
+        display: block;
+        margin-top: 30px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+
+    .div-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 335px;
+        height: 50px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        border-radius: 64px;
+        opacity: 1;
+    }
+
+    .div-container-links {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-main-container-link{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .link-icon {
+        height: 30px;
+        width:30px;
+        cursor: pointer;
+    }
+
+    .btn-success {
+        margin-top: 20px;
+        height:48px;
+        background-color:#05C0A3;
+    }
+
+    .logo-branco {
+        width: 300px;
+    }
   }

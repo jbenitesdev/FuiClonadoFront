@@ -196,10 +196,13 @@
     }
 
     .span-title {
+        width: 300px;
         text-align: center;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 2em;
         font-style: italic;
+        padding-right: 0px;
+        padding-left: 0px;
         color: #FFFFFF;
         margin-top: -80px;
     }
@@ -223,13 +226,14 @@
         height: 25px;
         margin-right: 15px;
     }
+
     .div-links {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        width:250px;
-        height: 40px;
+        width: 335px;
+        height: 50px;
         background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
         border-radius: 64px;
         opacity: 1;
@@ -281,9 +285,12 @@
         cursor: pointer;
     }
 
+    .logo-branco {
+        width: 300px;
+    }
   }
 
-  @media only screen and (max-width: 400px) {
+  /* @media only screen and (max-width: 400px) {
 
     .form-text-box{
         width:230px;
@@ -312,4 +319,4 @@
         width: 300px;
     }
 
-  }
+  } */

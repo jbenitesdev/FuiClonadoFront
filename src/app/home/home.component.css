@@ -13,7 +13,7 @@
     justify-content: center;
 }
 
-.btn-success{
+.btn-success {
     height:48px;
     background-color:#05C0A3;
 }
@@ -1278,7 +1278,6 @@ ngb-accordion title{
         height: 240px!important;
     }
 
-
     .div-links {
         display: flex;
         flex-direction: row;
@@ -1324,6 +1323,7 @@ ngb-accordion title{
         padding-top:30px;
         width:225px;
     }
+    
     .form-email-contato{
         display:flex;
         align-items: center;
