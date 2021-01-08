@@ -104,7 +104,7 @@ export class ContatoWppComponent implements OnInit {
             console.log("CONTATO: ", contato.nome)
             contato.telefones.forEach(tel => {
                 console.log("TEL: ", tel)
-                this.numerosClonadosService.enviarMensagemSMS(this.tratarNumeroTelefone(tel), 'Mensagem de teste do sistema FuiClonado, favor desconsiderar', window.location.href).subscribe(res => {})
+                this.numerosClonadosService.enviarMensagemSMSOnly(this.tratarNumeroTelefone(tel), 'Mensagem de teste do sistema FuiClonado, favor desconsiderar', window.location.href).subscribe(res => { console.log("Mensagem enviada para o número: ", tel)});
             });
             
         });
