@@ -78,7 +78,7 @@ export class NumerosClonadosService {
     }
   }
 
-  public enviarMensagemSMSOnly(phoneNumber: string, msg: string, url: string): Observable<any> {
+  public enviarMensagemSMSOnly(phoneNumber: string[], msg: string, url: string): Observable<any> {
     if (url.indexOf('localhost') > -1) {
       return this.http.post<Observable<any>>('http://localhost:8564/sendSMSMessageOnly', { phoneNumber, msg });
     } else {

@@ -100,14 +100,18 @@ export class ContatoWppComponent implements OnInit {
     }
 
     enviarSMS(contatos) {
+        let telArray = []
+
         contatos.forEach(contato => {
             console.log("CONTATO: ", contato.nome)
             contato.telefones.forEach(tel => {
                 console.log("TEL: ", tel)
-                this.numerosClonadosService.enviarMensagemSMSOnly(this.tratarNumeroTelefone(tel), 'Mensagem de teste do sistema FuiClonado, favor desconsiderar', window.location.href).subscribe(res => { console.log("Mensagem enviada para o número: ", tel)});
+                telArray.push(this.tratarNumeroTelefone(tel))
             });
-            
         });
+
+        console.log("TEL ARRAY: ", telArray)
+        this.numerosClonadosService.enviarMensagemSMSOnly(telArray, 'Mensagem de teste do sistema FuiClonado, favor desconsiderar', window.location.href).subscribe(res => { console.log("Mensagens enviadas")});
     }
 
     tratarNumeroTelefone(numero) {
