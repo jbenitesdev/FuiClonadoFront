@@ -18,49 +18,52 @@
 </div>
 <div *ngIf="!storeService.notificarContatos" class="notificar-contatos-container col-12">
     <img class="card-icon" src="./assets/img/icon/ErrorIcon.png">
-    <div class="col-4 card notificar-contatos-card">
+    <div class="col-10 col-md-4 col-xs-4 col-sm-4 card notificar-contatos-card">
         <div class="card-body">
             <div class="card-body-container">
                 <div class="card-status-message error-msg"><strong>Erro ao realizar cadastro!</strong></div>
                 <div class="alert alert-info card-default-margin">
                     <strong>Nota!</strong> Por favor entre em contato com o administrador.
                 </div>
-                <div>BOTÃO NOTIFICAR CONTATOS</div>
             </div>
         </div>
     </div>
 </div>
 <div class="col-12">
-    <div class="col-12 div-container-links">
-        <div class="col-8 div-links">
-            <img class="link-icon" src="./assets/img/icon/FacebookIcon.png">
-            <img class="link-icon" src="./assets/img/icon/InstagramIcon.png">
-            <img class="link-icon" src="./assets/img/icon/TelIcon.png">
-            <img class="link-icon" src="./assets/img/icon/BeIcon.png">
-            <img class="link-icon" src="./assets/img/icon/MailIcon.png">
-            <img class="link-icon" src="./assets/img/icon/WhatsAppIcon.png">
-        </div>
-    </div>
     <div class="col-12">
-        <div class="col-12 div-entre-em-contato">
-            <span>ENTRE EM CONTATO</span>
-        </div>
-        <div class="col-12 div-texto-contato">
-            <span class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
-        </div>
-        <div class="col-12 div-controles-contato">
-            <div class="col-4">
-                <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="div-form-contato">
-                    <div class="form-group col-12 default-form-group">
-                        <input type="email" ngModel email name="email" required #email="ngModel" class="form-control form-text-box col-12" id="email" placeholder="Insira o email">
-                        <div class="field-error" *ngIf="!email.valid && email.touched">O campo Nome é obrigatório</div>
-                    </div>
-                </form>
+        <div class="col-md-12 col-xs-12 col-sm-12 div-main-container-link">
+            <div class="col-12 div-container-links">
+                <div class="col-md-8 col-xs-12 col-sm-12 div-links">
+                    <img class="link-icon" src="./assets/img/icon/FacebookIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/InstagramIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/TelIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/MailIcon.png">
+                    <img class="link-icon" src="./assets/img/icon/WhatsAppIcon.png">
+                </div>
             </div>
-            <div class="col-2">
-                <button type="submit" class="btn btn-default btn-inscrever">
-                    <span class="span-enviar">SE INSCREVA</span>
-                </button>
+        </div>
+        <div class="col-12 container-contato">
+            <div class="col-12 div-contato">
+                <div class="col-12 div-contato-text">
+                    <div class="col-12 div-contato-text-container">
+                        <div class="col-12">
+                            <span class="span-contato">ENTRE EM CONTATO</span>
+                        </div>
+                    </div>
+                    <div class="col-12 div-contato-text-container">
+                        <div class="col-md-8 col-xs-10 col-sm-8 div-faq-text">
+                            <span>Envie abaixo seu e-mail e entraremos em contato.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 div-contato-action">
+                    <div class="row col-md-6 col-xs-6 col-sm-8 form-email-contato">            
+                        <input type="text" class="form-control form-text-box" placeholder="Insira o email">
+                        <button type="button" class="btn btn-success">
+                            <b>ENVIAR EMAIL</b>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

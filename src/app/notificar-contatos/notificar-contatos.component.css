@@ -68,6 +68,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    width:800px;
     height: 80px;
     background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
     border-radius: 64px;
@@ -76,67 +77,94 @@
 
 .link-icon {
     height: 60px;
+    width:60px;
     cursor: pointer;
 }
 
-.contato-phone-icon {
-    height: 50px;
-    margin-right: 15px;
-}
-
-.div-entre-em-contato {
-    font-size: 5em;
-    font-weight: 700;
-    color: #3C5768;
-    font-style: italic;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.div-texto-contato {
-    margin-top: 30px;
+.container-contato {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    font-size: 2em;
-    color: #3C5768;
-}
-
-.div-controles-contato {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    justify-content: center;
     margin-top: 30px;
 }
 
-.lbl-form-contato {
-    font-size: 2em;
+.div-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.span-contato {
+    font-size: 4em;
     font-weight: 400;
     color: #3C5768;
 }
 
-.btn-inscrever {
-    width: 240px;
-    height: 60px;
-    background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
-    mix-blend-mode: multiply;
-    border-radius: 20px;
-}
-
-.div-btn-enviar-contato {
-    margin-top: 50px;
-    text-align: center;
-}
-
-.span-enviar {
+.span-contato-text {
     font-size: 2em;
-    color: #FFFFFF;
+    font-weight: 300;
+    color: #3C5768;
+}
+
+.div-faq-text {
+    font-size: 2em!important;
+    color: #3C5768!important;
 }
 
 .form-text-box {
+    width: 390px;
+    height: 50px;
+}
+
+.btn-success {
+    height:48px;
+    background-color:#05C0A3;
+}
+
+.div-contato-text-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-email-contato{
+    padding-top: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-contato-text {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.div-contato-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.span-email-text {
+    font-size: 1.5em;
+    color: #3C5768;
+}
+
+.span-inscreva {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.btn-inscreva {
+    width: 200px;
     height: 60px;
+    background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+    
 }
 
 .div-rodape {
@@ -154,4 +182,80 @@
 .logo-branco {
     margin-top: 100px;
     margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+    .form-text-box {
+        width: 300px;
+        height: 50px;
+    }
+
+    .div-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 335px;
+        height: 50px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        border-radius: 64px;
+        opacity: 1;
+    }
+
+    .div-container-links {
+        margin-top: 0px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-main-container-link{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .link-icon {
+        height: 30px;
+        width:30px;
+        cursor: pointer;
+    }
+
+    .span-contato {
+        font-size: 2em;
+        font-weight: 400;
+        color: #3C5768;
+    }
+
+    .div-faq-text {
+        font-size: 1em!important;
+        color: #3C5768!important;
+        padding-top:30px;
+        width:225px;
+    }
+    
+    .form-email-contato {
+        padding-right: 0px;
+        padding-left: 0px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contianer-info {
+        position: absolute;
+        z-index: 999;
+        top: -3%;
+    }
+
+    .btn-success {
+        margin-top: 20px;
+    }
+
+    .logo-branco {
+        width: 300px;
+    }
 }
