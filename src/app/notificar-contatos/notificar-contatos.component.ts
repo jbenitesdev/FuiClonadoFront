@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { StoreService } from '../shared/store.service';
 
@@ -7,15 +7,10 @@ import { StoreService } from '../shared/store.service';
   templateUrl: './notificar-contatos.component.html',
   styleUrls: ['./notificar-contatos.component.css']
 })
-export class NotificarContatosComponent implements OnInit {
+export class NotificarContatosComponent implements OnDestroy {
   constructor(public storeService: StoreService) {  }
 
-  ngOnInit() {
-
-  }
-
   notificarContatos(msg: string) {
-    this.resetValues();
     this.openGoogleApi();
     console.log(msg);
 
@@ -40,5 +35,9 @@ export class NotificarContatosComponent implements OnInit {
 
   onSubmit(form) {
     console.log('Enviou o e-mail');
+  }
+
+  ngOnDestroy() {
+    this.resetValues();
   }
 }
