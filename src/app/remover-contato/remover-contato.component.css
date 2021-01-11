@@ -345,18 +345,6 @@ ngb-accordion {
         margin-top: -50px;
     }
 
-    .span-title {
-        text-align: center;
-        font-weight: 700;
-        font-size: 2em;
-        font-style: italic;
-        padding-right: 0px;
-        padding-left: 0px;
-        color: #FFFFFF;
-        margin-top: -80px;
-    }
-
-
     .div-links {
         display: flex;
         flex-direction: row;
@@ -380,6 +368,7 @@ ngb-accordion {
         color: #3C5768!important;
         padding-top:30px;
     }
+
     .form-email-contato{
         display:flex;
         align-items: center;
@@ -410,16 +399,11 @@ ngb-accordion {
         padding-right: 0px;
         padding-left: 0px;
         color: #FFFFFF;
-        margin-top: -80px;
+        margin-top: -65px;
     }
 
     .default-form-group {
         margin-top: 50px;
-    }
-
-    .form-text-box {
-        width: 250px;
-        height: 40px;
     }
 
     .div-contato {
@@ -441,7 +425,7 @@ ngb-accordion {
         justify-content: center;
     }
 
-    .div-main-container-link{
+    .div-main-container-link {
         display: flex; 
         align-items: center; 
         justify-content: center;
@@ -455,10 +439,67 @@ ngb-accordion {
 
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 768px) {
+    .div-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 335px;
+        height: 50px;
+        background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+        border-radius: 64px;
+        opacity: 1;
+    }
+
+    .div-container-links {
+        margin-top: 0px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-main-container-link {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .link-icon {
+        height: 30px;
+        width:30px;
+        cursor: pointer;
+    }
+
+    .form-email-contato {
+        padding-right: 0px;
+        padding-left: 0px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-text-box {
+        width: 275px;
+        height: 50px;
+    }
+
+    .div-faq-text {
+        font-size: 1em!important;
+        color: #3C5768!important;
+        padding-top:30px;
+        width:225px;
+    }
+    
+    .btn-success {
+        margin-top: 20px;
+        height:48px;
+        background-color:#05C0A3;
+    }
 
     .logo-branco {
         width: 300px;
     }
-
   }

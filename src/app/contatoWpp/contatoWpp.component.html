@@ -1,6 +1,6 @@
 <div *ngIf="isValid" class="notificar-contatos-container col-12">
     <img class="card-icon" src="./assets/img/icon/SuccessIcon2.png">
-    <div [class.col-4]="!mobile" [class.col-10]="mobile" class="card notificar-contatos-card">
+    <div class="col-10 col-md-4 col-xs-4 col-sm-4 card notificar-contatos-card">
         <div class="card-body">
             <div class="card-body-container">
                 <div class="card-status-message success-msg"><strong>Autorização realizada com sucesso!</strong></div>
@@ -13,7 +13,7 @@
 </div>
 <div *ngIf="!isValid" class="notificar-contatos-container col-12">
     <img class="card-icon" src="./assets/img/icon/ErrorIcon.png">
-    <div [class.col-4]="!mobile" [class.col-10]="mobile" class="card notificar-contatos-card">
+    <div class="col-10 col-md-4 col-xs-4 col-sm-4 card notificar-contatos-card">
         <div class="card-body">
             <div class="card-body-container">
                 <div class="card-status-message error-msg"><strong>Erro ao realizar cadastro!</strong></div>
